@@ -3,6 +3,7 @@ import './App.css';
 import Sidebar from './Components/Sidebar';
 import Header from './Components/Header';
 import Home from './Pages/Home';
+import Routing from './Routes';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Sidebar />
         <Header />
       </div>
-      <Home />
+      <Routing />
     </div>
   );
 }

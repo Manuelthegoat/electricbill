@@ -17,7 +17,7 @@ const HomeHead = () => {
                     />
                   </div>
                   <div>
-                    <p class="mb-2">Total Sales</p>
+                    <p class="mb-2">Total Payments</p>
                     <h4>31.50</h4>
                   </div>
                 </div>
@@ -42,7 +42,7 @@ const HomeHead = () => {
                     />
                   </div>
                   <div>
-                    <p class="mb-2">Total Cost</p>
+                    <p class="mb-2">Total Orders</p>
                     <h4>$ 4598</h4>
                   </div>
                 </div>

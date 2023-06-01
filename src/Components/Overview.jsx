@@ -3,41 +3,99 @@ import React from "react";
 const Overview = () => {
   return (
     <>
-      <div class="col-lg-6">
-        <div class="card card-block card-stretch card-height">
-          <div class="card-header d-flex justify-content-between">
-            <div class="header-title">
-              <h4 class="card-title">Overview</h4>
-            </div>
-            <div class="card-header-toolbar d-flex align-items-center">
-              <div class="dropdown">
-                <span
-                  class="dropdown-toggle dropdown-bg btn"
-                  id="dropdownMenuButton001"
-                  data-toggle="dropdown"
-                >
-                  This Month<i class="ri-arrow-down-s-line ml-1"></i>
-                </span>
-                <div
-                  class="dropdown-menu dropdown-menu-right shadow-none"
-                  aria-labelledby="dropdownMenuButton001"
-                >
-                  <a class="dropdown-item" href="#">
-                    Year
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    Month
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    Week
-                  </a>
-                </div>
-              </div>
-            </div>
+      <div class="col-lg-12">
+        <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
+          <div>
+            <h4 class="mb-3">All Orders</h4>
           </div>
-          <div class="card-body">
-            <div id="layout1-chart1"></div>
-          </div>
+          <a href="page-add-sale.html" class="btn btn-primary add-list">
+            <i class="las la-plus mr-3"></i>Add Order
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="table-responsive rounded mb-3">
+          <table class="data-table table mb-0 tbl-server-info">
+            <thead class="bg-white text-uppercase">
+              <tr class="ligth ligth-data">
+                <th>
+                  <div class="checkbox d-inline-block">
+                    <input
+                      type="checkbox"
+                      class="checkbox-input"
+                      id="checkbox1"
+                    />
+                    <label for="checkbox1" class="mb-0"></label>
+                  </div>
+                </th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Apartment</th>
+                <th>Amount</th>
+                <th>Payment Method</th>
+                <th>Date&Time</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody class="ligth-body">
+              <tr>
+                <td>
+                  <div class="checkbox d-inline-block">
+                    <input
+                      type="checkbox"
+                      class="checkbox-input"
+                      id="checkbox2"
+                    />
+                    <label for="checkbox2" class="mb-0"></label>
+                  </div>
+                </td>
+                <td>Manuel U.</td>
+                <td>09029021962</td>
+                <td>no 7 jesus street</td>
+                <td>38.50</td>
+                <td>
+                  <div class="badge badge-success">Paid</div>
+                </td>
+                <td>Yerds</td>
+                <td>1.3</td>
+                <td>
+                  <div class="d-flex align-items-center list-action">
+                    <a
+                      class="badge badge-info mr-2"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title=""
+                      data-original-title="View"
+                      href="#"
+                    >
+                      <i class="ri-eye-line mr-0"></i>
+                    </a>
+                    <a
+                      class="badge bg-success mr-2"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title=""
+                      data-original-title="Edit"
+                      href="#"
+                    >
+                      <i class="ri-pencil-line mr-0"></i>
+                    </a>
+                    <a
+                      class="badge bg-warning mr-2"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title=""
+                      data-original-title="Delete"
+                      href="#"
+                    >
+                      <i class="ri-delete-bin-line mr-0"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </>
