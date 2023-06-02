@@ -177,7 +177,7 @@ const Sidebar = () => {
                   data-parent="#iq-sidebar-toggle"
                 >
                   <li class="">
-                    <a href="page-list-category.html">
+                    <a href="/all-agents">
                       <i class="fa-solid fa-minus"></i> <span>Agent</span>
                     </a>
                   </li>
