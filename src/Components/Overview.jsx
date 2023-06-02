@@ -30,10 +30,10 @@ const Overview = () => {
                 </th>
                 <th>Name</th>
                 <th>Phone</th>
-                <th>Address</th>
+                <th>Address&nbsp;&nbsp;&nbsp;</th>
                 <th>Apartment</th>
-                <th>Amount</th>
                 <th>Payment Method</th>
+                <th>Amount</th>
                 <th>Date&Time</th>
                 <th>Action</th>
               </tr>
@@ -53,12 +53,12 @@ const Overview = () => {
                 <td>Manuel U.</td>
                 <td>09029021962</td>
                 <td>no 7 jesus street</td>
-                <td>38.50</td>
+                <td>1 room</td>
                 <td>
-                  <div class="badge badge-success">Paid</div>
+                  <div class="badge badge-success">Paid Cash</div>
                 </td>
-                <td>Yerds</td>
-                <td>1.3</td>
+                <td>#10,000</td>
+                <td>01 jan 2021 (14:39)</td>
                 <td>
                   <div class="d-flex align-items-center list-action">
                     <a

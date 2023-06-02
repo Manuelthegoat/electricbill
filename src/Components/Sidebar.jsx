@@ -43,7 +43,7 @@ const Sidebar = () => {
                 </a>
               </li>
               <li >
-                <a href="index.html" class="svg-icon">
+                <a href="/create-customer" class="svg-icon">
                   <svg
                     class="svg-icon"
                     id="p-dash1"
@@ -111,13 +111,13 @@ const Sidebar = () => {
                   data-parent="#iq-sidebar-toggle"
                 >
                   <li class="">
-                    <a href="page-list-product.html">
+                    <a href="/all-orders">
                       <i class="fa-solid fa-minus"></i>
                       <span>all orders</span>
                     </a>
                   </li>
                   <li class="">
-                    <a href="page-add-product.html">
+                    <a href="/create-order">
                       <i class="fa-solid fa-minus"></i>
                       <span>Create Order</span>
                     </a>
