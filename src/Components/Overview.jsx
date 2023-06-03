@@ -61,7 +61,7 @@ const Overview = () => {
                 <td>01 jan 2021 (14:39)</td>
                 <td>
                   <div class="d-flex align-items-center list-action">
-                    <a
+                    {/* <a
                       class="badge badge-info mr-2"
                       data-toggle="tooltip"
                       data-placement="top"
@@ -70,7 +70,7 @@ const Overview = () => {
                       href="#"
                     >
                       <i class="ri-eye-line mr-0"></i>
-                    </a>
+                    </a> */}
                     <a
                       class="badge bg-success mr-2"
                       data-toggle="tooltip"
