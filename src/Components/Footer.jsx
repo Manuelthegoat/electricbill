@@ -15,7 +15,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div class="col-lg-6 text-right">
-                            <span class="mr-1">2023 ©</span> <a href="/" class="">Stoken Broker</a>.
+                            <span class="mr-1">2023 ©</span> <a href="/" class="">Stoken</a>.
                         </div>
                     </div>
                 </div>
