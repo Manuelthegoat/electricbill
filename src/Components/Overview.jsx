@@ -8,9 +8,9 @@ const Overview = () => {
           <div>
             <h4 class="mb-3">All Orders</h4>
           </div>
-          <a href="page-add-sale.html" class="btn btn-primary add-list">
+          {/* <a href="page-add-sale.html" class="btn btn-primary add-list">
             <i class="las la-plus mr-3"></i>Add Order
-          </a>
+          </a> */}
         </div>
       </div>
       <div class="col-lg-12">

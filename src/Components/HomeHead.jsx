@@ -18,7 +18,7 @@ const HomeHead = () => {
                   </div>
                   <div>
                     <p class="mb-2">Total Payments</p>
-                    <h4>31.50</h4>
+                    <h4>&#8358;31.50</h4>
                   </div>
                 </div>
                 <div class="iq-progress-bar mt-2">
@@ -43,7 +43,7 @@ const HomeHead = () => {
                   </div>
                   <div>
                     <p class="mb-2">Total Orders</p>
-                    <h4>$ 4598</h4>
+                    <h4>&#8358; 4598</h4>
                   </div>
                 </div>
                 <div class="iq-progress-bar mt-2">
@@ -68,7 +68,7 @@ const HomeHead = () => {
                   </div>
                   <div>
                     <p class="mb-2">Product Sold</p>
-                    <h4>4589 M</h4>
+                    <h4>&#8358;4589</h4>
                   </div>
                 </div>
                 <div class="iq-progress-bar mt-2">
