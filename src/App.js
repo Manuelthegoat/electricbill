@@ -4,6 +4,7 @@ import Sidebar from './Components/Sidebar';
 import Header from './Components/Header';
 import Home from './Pages/Home';
 import Routing from './Routes';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Header />
       </div>
       <Routing />
+      <Footer />
     </div>
   );
 }

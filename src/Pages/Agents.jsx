@@ -69,15 +69,23 @@ const Agents = () => {
                           alt="01"
                         />
                       </td>
-                      <td>
-                        Nil
-                      </td>
+                      <td>Nil</td>
                       <td>Mr Emmanuel</td>
                       <td>09029021962</td>
                       <td>no 7 jesus street</td>
                       <td>Developer</td>
                       <td>
                         <div class="d-flex align-items-center list-action">
+                          <a
+                            class="badge badge-info mr-2"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title=""
+                            data-original-title="View"
+                            href="#"
+                          >
+                            <i class="ri-eye-line mr-0"></i>
+                          </a>
                           <a
                             class="badge bg-success mr-2"
                             data-toggle="tooltip"

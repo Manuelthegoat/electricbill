@@ -33,6 +33,18 @@ const CreateOrder = () => {
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
+                          <label>Email Address</label>
+                          <input
+                            type="number"
+                            class="form-control"
+                            placeholder="Enter Email"
+                            required
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
                           <label>Phone No *</label>
                           <input
                             type="number"
@@ -99,6 +111,20 @@ const CreateOrder = () => {
                           />
                         </div>
                       </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Payment Method</label>
+                          <select
+                            name="type"
+                            class="selectpicker form-control"
+                            data-style="py-0"
+                          >
+                            <option>Cash</option>
+                            <option>Card</option>
+                            <option>Transfer</option>
+                          </select>
+                        </div>
+                      </div>
                       <div class="col-md-12">
                         <div class="form-group">
                           <label>Agent*</label>
@@ -114,20 +140,7 @@ const CreateOrder = () => {
                         </div>
                       </div>
 
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Payment Method</label>
-                          <select
-                            name="type"
-                            class="selectpicker form-control"
-                            data-style="py-0"
-                          >
-                            <option>Cash</option>
-                            <option>Card</option>
-                            <option>Transfer</option>
-                          </select>
-                        </div>
-                      </div>
+                     
                     </div>
                     <button type="submit" class="btn btn-primary mr-2">
                       Create Order

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import AddAgent from './Pages/AddAgent';
 import Agents from './Pages/Agents';
 import AllOrders from './Pages/AllOrders';
 import CreateCustomer from './Pages/CreateCustomer';
@@ -15,6 +16,7 @@ const Routing = () => {
         <Route path='/all-orders' element={<AllOrders />} />
         <Route path='/create-order' element={<CreateOrder />} />
         <Route path='/all-agents' element={<Agents />} />
+        <Route path='/create-agent' element={<AddAgent />} />
       </Routes>
     </>
   )
