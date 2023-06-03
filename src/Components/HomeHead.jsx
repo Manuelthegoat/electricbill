@@ -67,8 +67,8 @@ const HomeHead = () => {
                     />
                   </div>
                   <div>
-                    <p class="mb-2">Product Sold</p>
-                    <h4>&#8358;4589</h4>
+                    <p class="mb-2">Regions</p>
+                    <h4>5</h4>
                   </div>
                 </div>
                 <div class="iq-progress-bar mt-2">
