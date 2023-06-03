@@ -21,12 +21,14 @@ const CreateOrder = () => {
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label>Name *</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Fullname"
-                          />
+                          <label>Customer Name</label>
+                          <select
+                            name="type"
+                            class="selectpicker form-control"
+                            data-style="py-0"
+                          >
+                            <option>Manuel U.</option>
+                          </select>
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -57,13 +59,17 @@ const CreateOrder = () => {
                       <div class="col-md-6">
                         <div class="form-group">
                           <label>Region *</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Enter Customer Region"
-                            required
-                          />
-                          <div class="help-block with-errors"></div>
+                          <select
+                            name="type"
+                            class="selectpicker form-control"
+                            data-style="py-0"
+                          >
+                            <option>Kano West</option>
+                            <option>Kano Central</option>
+                            <option>Kano East</option>
+                            <option>Kano North</option>
+                            <option>Kano South</option>
+                          </select>
                         </div>
                       </div>
                       <div class="col-md-6">

@@ -11,7 +11,7 @@ const Sidebar = () => {
               class="img-fluid rounded-normal light-logo"
               alt="logo"
             />
-            <h5 class="logo-title light-logo ml-3">Stoken Startup</h5>
+            <h5 class="logo-title light-logo ml-3">Stoken</h5>
           </a>
           <div class="iq-menu-bt-sidebar ml-0">
             <i class="fa-solid fa-bars wrapper-menu"></i>
