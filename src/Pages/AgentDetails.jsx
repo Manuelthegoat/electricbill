@@ -43,9 +43,13 @@ const AgentDetails = () => {
 
           <div className="row mt-3">
             <div class="col-lg-12">
-              <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
-                <div>
-                  <h4 class="mb-3">Agent Order History</h4>
+            <div class="row d-flex flex-wrap align-items-center justify-content-between mb-4">
+                <div className="col-lg-4">
+                <h4 class="mb-3">Agent Order History</h4>
+                </div>
+                <div className="col-lg-6 d-flex">
+                  <input type="date" class="form-control" />
+                  <input type="date" class="form-control" />
                 </div>
                
               </div>

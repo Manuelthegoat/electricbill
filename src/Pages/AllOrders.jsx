@@ -7,13 +7,19 @@ const AllOrders = () => {
         <div className="container-fluid">
           <div className="row">
             <div class="col-lg-12">
-              <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
-                <div>
-                  <h4 class="mb-3">All Orders</h4>
+              <div class="row d-flex flex-wrap align-items-center justify-content-between mb-4">
+                <div className="col-lg-4">
+                  <h4 class="">All Orders</h4>
                 </div>
-                <a href="/create-order" class="btn btn-primary add-list">
-                  <i class="las la-plus mr-3"></i>Add Order
-                </a>
+                <div className="col-lg-6 d-flex">
+                  <input type="date" class="form-control" />
+                  <input type="date" class="form-control" />
+                </div>
+                <div className="col-lg-2">
+                  <a href="/create-order" class="btn btn-primary add-list">
+                    <i class="las la-plus mr-3"></i>Add Order
+                  </a>
+                </div>
               </div>
             </div>
             <div class="col-lg-12">
