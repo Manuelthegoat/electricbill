@@ -5,7 +5,7 @@ const Sidebar = () => {
     <>
       <div class="iq-sidebar  sidebar-default ">
         <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
-          <a href="index.html" class="header-logo">
+          <a href="/" class="header-logo">
             <img
               src="assets/images/logo.png"
               class="img-fluid rounded-normal light-logo"

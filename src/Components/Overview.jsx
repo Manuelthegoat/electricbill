@@ -9,7 +9,7 @@ const Overview = () => {
             <h4 class="">All Orders</h4>
           </div>
           <div className="col-lg-6 d-flex">
-            <input type="date" class="form-control" placeholder="mm/dd/yyyy" />
+            <input type="date" class="form-control" placeholder="mm/dd/yyyy"  />
             <input type="date" class="form-control" placeholder="mm/dd/yyyy" />
           </div>
           {/* <a href="page-add-sale.html" class="btn btn-primary add-list">
