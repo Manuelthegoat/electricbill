@@ -1,19 +1,53 @@
 import React from "react";
 
-const Agents = () => {
+const AgentDetails = () => {
   return (
     <>
       <div className="content-page">
         <div className="container-fluid">
           <div className="row">
+            <div class="col-lg-4">
+              <div class="card card-transparent card-block card-stretch card-height border-none">
+                <div class="card-body p-0 mt-lg-2 mt-0">
+                  <h3 class="mb-3">Manuel U.</h3>
+                  <p class="mb-0 mr-4">
+                    manuelcreation247@gmail.com
+                    <br />
+                    09029021962
+                  </p>
+                  <h4 class="mt-3">Agent #188354</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-4">
+              <div class="card card-block card-stretch card-height">
+                <div class="card-body">
+                  <div class="d-flex align-items-center card-total-sale">
+                    <div class="icon iq-icon-box-2 bg-info-light">
+                      <img
+                        src="assets/images/product/1.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <div>
+                      <p class="mb-2">Agent Region:</p>
+                      <h4>KANO EAST</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="row mt-3">
             <div class="col-lg-12">
               <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div>
-                  <h4 class="mb-3">All Agents</h4>
+                  <h4 class="mb-3">Agent Order History</h4>
                 </div>
-                <a href="/create-agent" class="btn btn-primary add-list">
-                  <i class="las la-plus mr-3"></i>Add Agent
-                </a>
+               
               </div>
             </div>
             <div class="col-lg-12">
@@ -31,17 +65,18 @@ const Agents = () => {
                           <label for="checkbox1" class="mb-0"></label>
                         </div>
                       </th>
-                      <th>Agent ID</th>
                       <th>Name</th>
                       <th>Phone</th>
                       <th>Address&nbsp;&nbsp;&nbsp;</th>
-                      <th>Email</th>
-                      <th>Picture</th>
                       <th>Region</th>
-                      <th>Guarantor Name</th>
-                      <th>Guarantor NO</th>
-                      <th>Guarantor Address</th>
-                      <th>Guarantor Occupation</th>
+                      <th>Apartment</th>
+                      <th>Payment Method</th>
+                      <th>Amount</th>
+                      <th>Date&Time</th>
+                      <th>Period Of Payment</th>
+                      <th>Agent</th>
+                      <th>Confirmation</th>
+                      <th>Recurrent</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -57,35 +92,24 @@ const Agents = () => {
                           <label for="checkbox2" class="mb-0"></label>
                         </div>
                       </td>
-                      <td>#Agent&nbsp;188354</td>
-                      <td>Manuel&nbsp;U.</td>
-                      <td>09029021962</td>
-                      <td>no&nbsp;7&nbsp;jesus&nbsp;street</td>
-                      <td>manuelcreation247@gmail.com</td>
-                      <td>
-                        <img
-                          class="avatar-50 rounded-small"
-                          src="assets/images/user/01.jpg"
-                          alt="01"
-                        />
-                      </td>
-                      <td>Nil</td>
-                      <td>Mr Emmanuel</td>
+                      <td>Manuel U.</td>
                       <td>09029021962</td>
                       <td>no 7 jesus street</td>
-                      <td>Developer</td>
+                      <td>Nigeria</td>
+                      <td>1 room</td>
+                      <td>
+                        <div class="badge badge-success">Paid Cash</div>
+                      </td>
+                      <td>#10,000</td>
+                      <td>01 jan 2021 (14:39)</td>
+                      <td>January</td>
+                      <td>Agent #198228</td>
+                      <td>
+                        <div class="badge badge-success">Paid</div>
+                      </td>
+                      <td>Yes</td>
                       <td>
                         <div class="d-flex align-items-center list-action">
-                          <a
-                            class="badge badge-info mr-2"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title=""
-                            data-original-title="View"
-                            href="/agent-details"
-                          >
-                            <i class="ri-eye-line mr-0"></i>
-                          </a>
                           <a
                             class="badge bg-success mr-2"
                             data-toggle="tooltip"
@@ -114,10 +138,11 @@ const Agents = () => {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </>
   );
 };
 
-export default Agents;
+export default AgentDetails;
