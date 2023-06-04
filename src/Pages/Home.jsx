@@ -2,6 +2,7 @@ import React from "react";
 import HomeHead from "../Components/HomeHead";
 import LoggedIn from "../Components/LoggedIn";
 import Overview from "../Components/Overview";
+import Regions from "../Components/Regions";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
           <div className="row">
             <LoggedIn />
             <HomeHead />
+            <Regions />
             <Overview />
           </div>
         </div>

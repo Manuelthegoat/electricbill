@@ -81,6 +81,7 @@ const HomeHead = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </>
   );
