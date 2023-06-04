@@ -19,7 +19,7 @@ const AgentDetails = () => {
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 col-md-4">
+            <div class="col-lg-4 col-md-4">
               <div class="card card-block card-stretch card-height">
                 <div class="card-body">
                   <div class="d-flex align-items-center card-total-sale">
@@ -33,6 +33,25 @@ const AgentDetails = () => {
                     <div>
                       <p class="mb-2">Agent Region:</p>
                       <h4>KANO EAST</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="card card-block card-stretch card-height">
+                <div class="card-body">
+                  <div class="d-flex align-items-center card-total-sale">
+                    <div class="icon iq-icon-box-2 bg-info-light">
+                      <img
+                        src="assets/images/product/1.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <div>
+                      <p class="mb-2">Agent Total Orders:</p>
+                      <h4>1</h4>
                     </div>
                   </div>
                 </div>
