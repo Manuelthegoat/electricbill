@@ -11,7 +11,7 @@ const Agents = () => {
                 <div>
                   <h4 class="mb-3">All Agents</h4>
                 </div>
-                <a href="page-add-sale.html" class="btn btn-primary add-list">
+                <a href="/create-agent" class="btn btn-primary add-list">
                   <i class="las la-plus mr-3"></i>Add Agent
                 </a>
               </div>
