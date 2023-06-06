@@ -15,7 +15,7 @@ const Header = () => {
                   class="img-fluid rounded-normal"
                   alt="logo"
                 />
-                <h5 class="logo-title ml-3">Stoken Startup</h5>
+                <h5 class="logo-title ml-3">Skoten Startup</h5>
               </a>
             </div>
             <div class="iq-search-bar device-search">

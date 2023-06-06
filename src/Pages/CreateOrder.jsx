@@ -10,7 +10,7 @@ const CreateOrder = () => {
               <div class="card">
                 <div class="card-header d-flex justify-content-between">
                   <div class="header-title">
-                    <h4 class="card-title">Create Order</h4>
+                    <h4 class="card-title">Create Token</h4>
                   </div>
                 </div>
                 <div class="card-body">
@@ -143,7 +143,7 @@ const CreateOrder = () => {
                      
                     </div>
                     <button type="submit" class="btn btn-primary mr-2">
-                      Create Order
+                      Create Token
                     </button>
                     <button type="reset" class="btn btn-danger">
                       Reset

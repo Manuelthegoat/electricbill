@@ -11,7 +11,7 @@ const Sidebar = () => {
               class="img-fluid rounded-normal light-logo"
               alt="logo"
             />
-            <h5 class="logo-title light-logo ml-3">Stoken</h5>
+            <h5 class="logo-title light-logo ml-3">Skoten</h5>
           </a>
           <div class="iq-menu-bt-sidebar ml-0">
             <i class="fa-solid fa-bars wrapper-menu"></i>
@@ -88,7 +88,7 @@ const Sidebar = () => {
                     <circle cx="20" cy="21" r="1"></circle>
                     <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
                   </svg>
-                  <span class="ml-4">Orders</span>
+                  <span class="ml-4">Token</span>
                   <svg
                     class="svg-icon iq-arrow-right arrow-active"
                     width="20"
@@ -113,13 +113,13 @@ const Sidebar = () => {
                   <li class="">
                     <a href="/all-orders">
                       <i class="fa-solid fa-minus"></i>
-                      <span>all orders</span>
+                      <span>all Token</span>
                     </a>
                   </li>
                   <li class="">
                     <a href="/create-order">
                       <i class="fa-solid fa-minus"></i>
-                      <span>Create Order</span>
+                      <span>Create Token</span>
                     </a>
                   </li>
                 </ul>
