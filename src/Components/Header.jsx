@@ -30,19 +30,19 @@ const Header = () => {
                 />
               </form>
             </div>
+            <div class="col-md-5 mt-3">
+              <div class="form-group">
+                <select name="type" class=" form-control" data-style="py-0">
+                  <option>Region*</option>
+                  <option>Kano West</option>
+                  <option>Kano Central</option>
+                  <option>Kano East</option>
+                  <option>Kano North</option>
+                  <option>Kano South</option>
+                </select>
+              </div>
+            </div>
             <div class="d-flex align-items-center">
-              {/* <!--<div class="change-mode">
-                          <div class="custom-control custom-switch custom-switch-icon custom-control-inline">
-                              <div class="custom-switch-inner">
-                                  <p class="mb-0"> </p>
-                                  <input type="checkbox" class="custom-control-input" id="dark-mode" data-active="true">
-                                  <label class="custom-control-label" for="dark-mode" data-mode="toggle">
-                                      <span class="switch-icon-left"><i class="a-left ri-moon-clear-line"></i></span>
-                                      <span class="switch-icon-right"><i class="a-right ri-sun-line"></i></span>
-                                  </label>
-                              </div>
-                          </div>
-                      </div>--> */}
               <button
                 class="navbar-toggler"
                 type="button"

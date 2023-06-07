@@ -64,7 +64,7 @@ const AgentDetails = () => {
             <div class="col-lg-12">
             <div class="row d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div className="col-lg-4">
-                <h4 class="mb-3">Agent Token History</h4>
+                <h4 class="mb-3">Agent i History</h4>
                 </div>
                 <div className="col-lg-6 d-flex">
                   <input type="date" class="form-control" />

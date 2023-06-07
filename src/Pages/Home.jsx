@@ -12,7 +12,7 @@ const Home = () => {
           <div className="row">
             <LoggedIn />
             <HomeHead />
-            <Regions />
+            {/* <Regions /> */}
             <Overview />
           </div>
         </div>
