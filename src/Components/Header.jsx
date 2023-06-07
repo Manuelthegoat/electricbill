@@ -34,6 +34,7 @@ const Header = () => {
               <div class="form-group">
                 <select name="type" class=" form-control" data-style="py-0">
                   <option>Region*</option>
+                  <option>HQ</option>
                   <option>Kano West</option>
                   <option>Kano Central</option>
                   <option>Kano East</option>
