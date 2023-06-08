@@ -1,6 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
+import PaystackPop from "@paystack/inline-js";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
 
 const CreateOrder = () => {
+  const navigate = useNavigate()
+  const [name, setName] = useState("");
+  const [email, setemail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [address, setAddress] = useState("");
+  const [region, setRegion] = useState("");
+  const [ApartmentType, setApartment] = useState("");
+  const [amount, setAmount] = useState("");
+  const [isVisible, setIsVisible] = useState(false);
+  const [pay, setPay] = useState(true);
+
+  const payWithPaystack = (e) => {
+    e.preventDefault();
+    const paystack = new PaystackPop();
+    paystack.newTransaction({
+      key: "pk_test_972509dd74772ecce447370a9b51fc204504b972",
+      amount: amount * 100,
+      email,
+      name,
+      phoneNumber,
+      onSuccess(transaction) {
+        const randomNumber =
+          Math.floor(Math.random() * 900000000000000) + 100000000000000;
+        let message = `Payment Successfull, Token : ${randomNumber}`;
+        Swal.fire({
+          icon: "success",
+          title: "Payment Successful",
+          text: `Worth: ${amount} Token : ${randomNumber}`,
+        });
+        navigate('/all-orders')
+      },
+      onCancel(){
+        Swal.file({
+          icon: "error",
+          title: "Oops",
+          text: 'You have cancelled the transaction'
+        })
+      }
+    });
+  };
+  const handleSelectChange = (event) => {
+    const selectedValue = event.target.value;
+    // setIsVisible(selectedValue === "cash");
+    if (selectedValue === "cash") {
+      setIsVisible(true);
+      setPay(false);
+    }else if (selectedValue === 'transfer'){
+      setIsVisible(false)
+      setPay(true)
+    }
+    else{
+      setPay(true)
+      setIsVisible(false)
+    }
+  };
   return (
     <>
       <div class="content-page">
@@ -14,20 +73,19 @@ const CreateOrder = () => {
                   </div>
                 </div>
                 <div class="card-body">
-                  <form
-                    action="https://templates.iqonic.design/posdash/html/backend/page-list-returns.html"
-                    data-toggle="validator"
-                  >
+                  <form data-toggle="validator">
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
                           <label>Customer Name</label>
                           <select
                             name="type"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                             class="selectpicker form-control"
                             data-style="py-0"
                           >
-                            <option>Manuel U.</option>
+                            <option selected>Manuel U.</option>
                           </select>
                         </div>
                       </div>
@@ -35,9 +93,11 @@ const CreateOrder = () => {
                         <div class="form-group">
                           <label>Email Address</label>
                           <input
-                            type="number"
+                            type="text"
                             class="form-control"
                             placeholder="Enter Email"
+                            value={email}
+                            onChange={(e) => setemail(e.target.value)}
                             required
                           />
                           <div class="help-block with-errors"></div>
@@ -50,6 +110,8 @@ const CreateOrder = () => {
                             type="number"
                             class="form-control"
                             placeholder="Enter Phone No"
+                            value={phoneNumber}
+                            onChange={(e) => setPhoneNumber(e.target.value)}
                             required
                           />
                           <div class="help-block with-errors"></div>
@@ -63,6 +125,8 @@ const CreateOrder = () => {
                             type="text"
                             class="form-control"
                             placeholder="Enter Customer Address"
+                            value={address}
+                            onChange={(e) => setAddress(e.target.value)}
                             required
                           />
                           <div class="help-block with-errors"></div>
@@ -75,6 +139,8 @@ const CreateOrder = () => {
                             name="type"
                             class="selectpicker form-control"
                             data-style="py-0"
+                            value={region}
+                            onChange={(e) => setRegion(e.target.value)}
                           >
                             <option>Kano West</option>
                             <option>Kano Central</option>
@@ -91,6 +157,8 @@ const CreateOrder = () => {
                             name="type"
                             class="selectpicker form-control"
                             data-style="py-0"
+                            value={ApartmentType}
+                            onChange={(e) => setApartment(e.target.value)}
                           >
                             <option>1 Room</option>
                             <option>Mini Flat</option>
@@ -107,6 +175,8 @@ const CreateOrder = () => {
                           <input
                             type="text"
                             class="form-control"
+                            value={amount}
+                            onChange={(e) => setAmount(e.target.value)}
                             placeholder="Amount"
                           />
                         </div>
@@ -118,10 +188,11 @@ const CreateOrder = () => {
                             name="type"
                             class="selectpicker form-control"
                             data-style="py-0"
+                            onChange={handleSelectChange}
                           >
-                            <option>Cash</option>
-                            <option>Card</option>
-                            <option>Transfer</option>
+                            <option value="card">Card</option>
+                            <option value="transfer">Transfer</option>
+                            <option value="cash">Cash</option>
                           </select>
                         </div>
                       </div>
@@ -139,12 +210,26 @@ const CreateOrder = () => {
                           </select>
                         </div>
                       </div>
-
-                     
                     </div>
-                    <button type="submit" class="btn btn-primary mr-2">
-                      Create Token
-                    </button>
+                    {pay && (
+                      <button
+                        type="submit"
+                        onClick={payWithPaystack}
+                        class="btn btn-primary mr-2"
+                      >
+                        Proceed To Pay
+                      </button>
+                    )}
+
+                    {isVisible && (
+                      <button
+                        type="submit"
+                        // onClick={payCash}
+                        class="btn btn-primary mr-2"
+                      >
+                        Create Token
+                      </button>
+                    )}
                     <button type="reset" class="btn btn-danger">
                       Reset
                     </button>

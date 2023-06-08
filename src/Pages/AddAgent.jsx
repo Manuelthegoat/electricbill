@@ -104,6 +104,19 @@ const AddAgent = () => {
                           </select>
                         </div>
                       </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Role *</label>
+                          <select
+                            name="type"
+                            class="selectpicker form-control"
+                            data-style="py-0"
+                          >
+                            <option>Agent</option>
+                            <option>Supervisor</option>
+                          </select>
+                        </div>
+                      </div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label>Guarantor Name *</label>

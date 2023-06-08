@@ -7,6 +7,7 @@ import AllOrders from "./Pages/AllOrders";
 import CreateCustomer from "./Pages/CreateCustomer";
 import CreateOrder from "./Pages/CreateOrder";
 import Home from "./Pages/Home";
+import Supervisors from "./Pages/Supervisors";
 
 const Routing = () => {
   return (
@@ -19,6 +20,7 @@ const Routing = () => {
         <Route path="/all-agents" element={<Agents />} />
         <Route path="/create-agent" element={<AddAgent />} />
         <Route path="/agent-details" element={<AgentDetails />} />
+        <Route path="/supervisors" element={<Supervisors />} />
       </Routes>
     </>
   );

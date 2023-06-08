@@ -182,9 +182,14 @@ const Sidebar = () => {
                     </a>
                   </li>
                   <li class="">
+                    <a href="/supervisors">
+                      <i class="fa-solid fa-minus"></i> <span>Supervisors</span>
+                    </a>
+                  </li>
+                  <li class="">
                     <a href="/create-agent">
                       <i class="fa-solid fa-minus"></i>
-                      <span>Create Agent</span>
+                      <span>Create User</span>
                     </a>
                   </li>
                 </ul>

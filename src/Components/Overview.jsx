@@ -38,6 +38,7 @@ const Overview = () => {
                 <th>Apartment</th>
                 <th>Payment Method</th>
                 <th>Amount</th>
+                <th>Token</th>
                 <th>Date&Time</th>
                 <th>Action</th>
               </tr>
@@ -62,6 +63,7 @@ const Overview = () => {
                   <div class="badge badge-success">Paid Cash</div>
                 </td>
                 <td>#10,000</td>
+                <td>009977645563778</td>
                 <td>01 jan 2021 (14:39)</td>
                 <td>
                   <div class="d-flex align-items-center list-action">
