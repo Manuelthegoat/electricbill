@@ -42,7 +42,7 @@ const HomeHead = () => {
                     />
                   </div>
                   <div>
-                    <p class="mb-2">Total Token</p>
+                    <p class="mb-2">Total Token Sold</p>
                     <h4>150</h4>
                   </div>
                 </div>

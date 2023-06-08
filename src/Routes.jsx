@@ -8,6 +8,8 @@ import CreateCustomer from "./Pages/CreateCustomer";
 import CreateOrder from "./Pages/CreateOrder";
 import Home from "./Pages/Home";
 import Supervisors from "./Pages/Supervisors";
+import Supervisorsdetails from "./Pages/Supervisorsdetails";
+import TokenUnits from "./Pages/TokenUnits";
 
 const Routing = () => {
   return (
@@ -21,6 +23,8 @@ const Routing = () => {
         <Route path="/create-agent" element={<AddAgent />} />
         <Route path="/agent-details" element={<AgentDetails />} />
         <Route path="/supervisors" element={<Supervisors />} />
+        <Route path="/supervisors-details" element={<Supervisorsdetails />} />
+        <Route path="/token-units" element={<TokenUnits />} />
       </Routes>
     </>
   );

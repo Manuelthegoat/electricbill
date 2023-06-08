@@ -82,7 +82,7 @@ const Supervisors = () => {
                             data-placement="top"
                             title=""
                             data-original-title="View"
-                            href="/agent-details"
+                            href="/supervisors-details"
                           >
                             <i class="ri-eye-line mr-0"></i>
                           </a>

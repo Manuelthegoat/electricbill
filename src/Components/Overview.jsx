@@ -6,7 +6,7 @@ const Overview = () => {
       <div class="col-lg-12">
         <div class="row d-flex flex-wrap align-items-center justify-content-between mb-4">
           <div className="col-lg-6">
-            <h4 class="">All Token</h4>
+            <h4 class="">All Token Sold</h4>
           </div>
           <div className="col-lg-6 d-flex">
             <input type="date" class="form-control" placeholder="mm/dd/yyyy"  />
@@ -39,6 +39,7 @@ const Overview = () => {
                 <th>Payment Method</th>
                 <th>Amount</th>
                 <th>Token</th>
+                <th>Token Units</th>
                 <th>Date&Time</th>
                 <th>Action</th>
               </tr>
@@ -64,6 +65,7 @@ const Overview = () => {
                 </td>
                 <td>#10,000</td>
                 <td>009977645563778</td>
+                <td>20KW</td>
                 <td>01 jan 2021 (14:39)</td>
                 <td>
                   <div class="d-flex align-items-center list-action">
