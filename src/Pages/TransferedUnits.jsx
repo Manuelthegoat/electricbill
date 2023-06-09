@@ -39,8 +39,8 @@ const TransferedUnits = () => {
                       </th>
                       <th>Transfer Date</th>
                       <th>Region</th>
-                      <th>Amount Of Units Sent</th>
-                      <th>Fulfillment Date</th>
+                      <th>Number Of Units</th>
+                      {/* <th>Fulfillment Date</th> */}
                     </tr>
                   </thead>
                   <tbody class="ligth-body">
@@ -58,7 +58,7 @@ const TransferedUnits = () => {
                       <td>14-11-2023 (11:45pm)</td>
                       <td>Kano Central</td>
                       <td>5000</td>
-                      <td>25-11-2023</td>
+                      {/* <td>25-11-2023</td> */}
                     
                     </tr>
                   </tbody>

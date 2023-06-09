@@ -22,7 +22,7 @@ const PurchaseUnits = () => {
                   </div>
                 </div>
                 <div className="card-body">
-                  <form action="">
+                  <div >
                     <div className="row">
                       <div className="col-lg-12">
                         <div class="form-group">
@@ -44,7 +44,7 @@ const PurchaseUnits = () => {
                     >
                       Request
                     </button>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
