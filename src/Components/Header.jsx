@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderModal from "./HeaderModal";
 
-const Header = () => {
+const Header = ({ handleSelectChange, selectedItem }) => {
   return (
     <>
       <div class="iq-top-navbar">
@@ -32,14 +32,19 @@ const Header = () => {
             </div>
             <div class="col-md-5 mt-3">
               <div class="form-group">
-                <select name="type" class=" form-control" data-style="py-0">
-                  <option>Region*</option>
-                  <option>HQ</option>
-                  <option>Kano West</option>
-                  <option>Kano Central</option>
-                  <option>Kano East</option>
-                  <option>Kano North</option>
-                  <option>Kano South</option>
+                <select
+                  name="type"
+                  class=" form-control"
+                  value={selectedItem}
+                  onChange={handleSelectChange}
+                  data-style="py-0"
+                >
+                  <option value="HQ" selected>HQ</option>
+                  <option value="KanoWest">Kano West</option>
+                  <option value="KanoCentral">Kano Central</option>
+                  <option value="KanoEast">Kano East</option>
+                  <option value="KanoNorth">Kano North</option>
+                  <option value="KanoSouth">Kano South</option>
                 </select>
               </div>
             </div>

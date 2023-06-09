@@ -7,15 +7,17 @@ import AllOrders from "./Pages/AllOrders";
 import CreateCustomer from "./Pages/CreateCustomer";
 import CreateOrder from "./Pages/CreateOrder";
 import Home from "./Pages/Home";
+import PurchaseUnits from "./Pages/PurchaseUnits";
 import Supervisors from "./Pages/Supervisors";
 import Supervisorsdetails from "./Pages/Supervisorsdetails";
 import TokenUnits from "./Pages/TokenUnits";
+import TransferUnits from "./Pages/TransferUnits";
 
-const Routing = () => {
+const Routing = ({selectedItem}) => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home selectedItem={selectedItem} />} />
         <Route path="/create-customer" element={<CreateCustomer />} />
         <Route path="/all-orders" element={<AllOrders />} />
         <Route path="/create-order" element={<CreateOrder />} />
@@ -25,6 +27,8 @@ const Routing = () => {
         <Route path="/supervisors" element={<Supervisors />} />
         <Route path="/supervisors-details" element={<Supervisorsdetails />} />
         <Route path="/token-units" element={<TokenUnits />} />
+        <Route path="/purchase-units" element={<PurchaseUnits />} />
+        <Route path="/transfer-units" element={<TransferUnits />} />
       </Routes>
     </>
   );

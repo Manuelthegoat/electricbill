@@ -5,8 +5,14 @@ import Header from './Components/Header';
 import Home from './Pages/Home';
 import Routing from './Routes';
 import Footer from './Components/Footer';
+import { useState } from 'react';
 
 function App() {
+  const [selectedItem, setSelectedItem] = useState('HQ');
+
+  const handleSelectChange = (event) => {
+    setSelectedItem(event.target.value);
+  };
   return (
     <div>
       {/* <div id="loading">
@@ -15,9 +21,9 @@ function App() {
       </div> */}
       <div class="wrapper">
         <Sidebar />
-        <Header />
+        <Header selectedItem={selectedItem} handleSelectChange={handleSelectChange} />
       </div>
-      <Routing />
+      <Routing selectedItem={selectedItem} />
       <Footer />
     </div>
   );

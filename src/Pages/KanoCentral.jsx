@@ -1,24 +1,92 @@
-import React from "react";
+import React from 'react'
 
-const AllOrders = () => {
+const KanoCentral = () => {
   return (
-    <>
-      <div className="content-page">
+    <div>
+       <div className="content-page">
         <div className="container-fluid">
           <div className="row">
+            <div class="col-lg-3">
+              <div class="card card-transparent card-block card-stretch card-height bToken-none">
+                <div class="card-body p-0 mt-lg-2 mt-0">
+                  <h3 class="mb-3">CHINEDU R.</h3>
+                  <p class="mb-0 mr-4">
+                    manuelcreation247@gmail.com
+                    <br />
+                    09029021962
+                  </p>
+                  <h4 class="mt-3">Supervisor #188354</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="card card-block card-stretch card-height">
+                <div class="card-body">
+                  <div class="d-flex align-items-center card-total-sale">
+                    <div class="icon iq-icon-box-2 bg-info-light">
+                      <img
+                        src="assets/images/product/1.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <div>
+                      <p class="mb-2">Supervisor Region:</p>
+                      <h4>KANO Central</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="card card-block card-stretch card-height">
+                <div class="card-body">
+                  <div class="d-flex align-items-center card-total-sale">
+                    <div class="icon iq-icon-box-2 bg-info-light">
+                      <img
+                        src="assets/images/product/1.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <div>
+                      <p class="mb-2">Total Units Sold:</p>
+                      <h4>1</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="card card-block card-stretch card-height">
+                <div class="card-body">
+                  <div class="d-flex align-items-center card-total-sale">
+                    <div class="icon iq-icon-box-2 bg-info-light">
+                      <img
+                        src="assets/images/product/1.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                    <div>
+                      <p class="mb-2">Supervisor Total Units:</p>
+                      <h4>1</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row mt-3">
             <div class="col-lg-12">
               <div class="row d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div className="col-lg-4">
-                  <h4 class="">All Token Sold</h4>
+                  <h4 class="mb-3">Supervisor i History</h4>
                 </div>
                 <div className="col-lg-6 d-flex">
                   <input type="date" class="form-control" />
                   <input type="date" class="form-control" />
-                </div>
-                <div className="col-lg-2">
-                  <a href="/create-order" class="btn btn-primary add-list">
-                    <i class="las la-plus mr-3"></i>Sell Token
-                  </a>
                 </div>
               </div>
             </div>
@@ -46,7 +114,7 @@ const AllOrders = () => {
                       <th>Amount</th>
                       <th>Date&Time</th>
                       <th>Period Of Payment</th>
-                      <th>Agent</th>
+                      <th>Supervisor</th>
                       <th>Confirmation</th>
                       <th>Recurrent</th>
                       <th>Action</th>
@@ -75,7 +143,7 @@ const AllOrders = () => {
                       <td>#10,000</td>
                       <td>01 jan 2021 (14:39)</td>
                       <td>January</td>
-                      <td>Agent #198228</td>
+                      <td>Supervisor #198228</td>
                       <td>
                         <div class="badge badge-success">Paid</div>
                       </td>
@@ -112,8 +180,8 @@ const AllOrders = () => {
           </div>
         </div>
       </div>
-    </>
-  );
-};
+    </div>
+  )
+}
 
-export default AllOrders;
+export default KanoCentral
