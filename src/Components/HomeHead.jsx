@@ -67,7 +67,7 @@ const HomeHead = () => {
                     />
                   </div>
                   <div>
-                    <p class="mb-2">Total Token Units</p>
+                    <p class="mb-2">Total Units</p>
                     <h4>55467</h4>
                   </div>
                 </div>
