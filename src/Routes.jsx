@@ -11,6 +11,7 @@ import PurchaseUnits from "./Pages/PurchaseUnits";
 import Supervisors from "./Pages/Supervisors";
 import Supervisorsdetails from "./Pages/Supervisorsdetails";
 import TokenUnits from "./Pages/TokenUnits";
+import TransferedUnits from "./Pages/TransferedUnits";
 import TransferUnits from "./Pages/TransferUnits";
 
 const Routing = ({selectedItem}) => {
@@ -29,6 +30,7 @@ const Routing = ({selectedItem}) => {
         <Route path="/token-units" element={<TokenUnits />} />
         <Route path="/purchase-units" element={<PurchaseUnits />} />
         <Route path="/transfer-units" element={<TransferUnits />} />
+        <Route path="/transfered-units" element={<TransferedUnits />} />
       </Routes>
     </>
   );

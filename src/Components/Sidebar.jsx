@@ -124,9 +124,9 @@ const Sidebar = () => {
                     </a>
                   </li>
                   <li class="">
-                    <a href="/all-orders">
+                    <a href="/transfered-units">
                       <i class="fa-solid fa-minus"></i>
-                      <span>Request Unit</span>
+                      <span>View Tranfered Units</span>
                     </a>
                   </li>
                 </ul>
