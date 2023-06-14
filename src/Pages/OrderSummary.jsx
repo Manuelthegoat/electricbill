@@ -12,7 +12,12 @@ const OrderSummary = () => {
                   <h4 class="">Order Summary</h4>
                 </div>
                 <div className="col-lg-6 d-flex">
-                  <input type="date" class="form-control" />
+                  <select name="type" class="form-control" data-style="py-0">
+                    <option>Day</option>
+                    <option>Month</option>
+                    <option>Year</option>
+                  </select>&nbsp;
+
                   <input type="date" class="form-control" />
                 </div>
                 {/* <div className="col-lg-2">
@@ -44,7 +49,6 @@ const OrderSummary = () => {
                       <th>Units Sold</th>
                       <th>Units Available</th>
                       <th>Grand Total</th>
-                      <th>Number Of Units</th>
                       {/* <th>Fulfillment Date</th> */}
                     </tr>
                   </thead>
@@ -66,7 +70,6 @@ const OrderSummary = () => {
                       <td>10,903</td>
                       <td>5000</td>
                       <td>78,000</td>
-                      <td>20</td>
                       {/* <td>25-11-2023</td> */}
                     </tr>
                   </tbody>
