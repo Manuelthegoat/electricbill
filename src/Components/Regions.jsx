@@ -17,7 +17,7 @@ const Regions = () => {
                 </div>
                 <div>
                   <p class="mb-2">Total Units</p>
-                  <h4>31</h4>
+                  <h4>3154</h4>
                 </div>
               </div>
               <div class="iq-progress-bar mt-2">
