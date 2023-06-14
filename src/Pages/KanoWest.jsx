@@ -1,4 +1,5 @@
 import React from "react";
+import Regions from "../Components/Regions";
 
 const KanoWest = () => {
   return (
@@ -77,12 +78,16 @@ const KanoWest = () => {
               </div>
             </div>
           </div>
+          <div className="row">
+
+          <Regions />
+          </div>
 
           <div className="row mt-3">
             <div class="col-lg-12">
               <div class="row d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div className="col-lg-4">
-                  <h4 class="mb-3">Supervisor i History</h4>
+                  <h4 class="mb-3">Supervisor History</h4>
                 </div>
                 <div className="col-lg-6 d-flex">
                   <input type="date" class="form-control" />

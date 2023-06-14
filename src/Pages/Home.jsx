@@ -18,7 +18,7 @@ const Home = ({ selectedItem }) => {
             <div className="row">
               <LoggedIn />
               <HomeHead />
-              {/* <Regions /> */}
+              <Regions />
               <Overview />
             </div>
           </div>

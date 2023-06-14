@@ -1,4 +1,5 @@
 import React from "react";
+import Regions from "../Components/Regions";
 
 const AllOrders = () => {
   return (
@@ -22,6 +23,7 @@ const AllOrders = () => {
                 </div>
               </div>
             </div>
+            <Regions />
             <div class="col-lg-12">
               <div class="table-responsive rounded mb-3">
                 <table class="data-table table mb-0 tbl-server-info">

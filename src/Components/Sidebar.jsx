@@ -72,7 +72,7 @@ const Sidebar = () => {
                   data-toggle="collapse"
                   aria-expanded="false"
                 >
-                    <svg
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -189,6 +189,61 @@ const Sidebar = () => {
                     <a href="/create-order">
                       <i class="fa-solid fa-minus"></i>
                       <span>Sell Token</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class=" ">
+                <a
+                  href="#report"
+                  class="collapsed"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="svg-icon"
+                    id="p-dash2"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
+                    />
+                  </svg>
+
+                  <span class="ml-4">Reports</span>
+                  <svg
+                    class="svg-icon iq-arrow-right arrow-active"
+                    width="20"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="10 15 15 20 20 15"></polyline>
+                    <path d="M4 4h7a4 4 0 0 1 4 4v12"></path>
+                  </svg>
+                </a>
+                <ul
+                  id="report"
+                  class="iq-submenu collapse"
+                  data-parent="#iq-sidebar-toggle"
+                >
+                  <li class="">
+                    <a href="/all-orders">
+                      <i class="fa-solid fa-minus"></i>
+                      <span>Order Summary</span>
                     </a>
                   </li>
                 </ul>

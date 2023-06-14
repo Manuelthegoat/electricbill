@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import Regions from "../Components/Regions";
 
 const KanoEast = () => {
   return (
     <div>
-       <div className="content-page">
+      <div className="content-page">
         <div className="container-fluid">
           <div className="row">
             <div class="col-lg-3">
@@ -78,11 +79,15 @@ const KanoEast = () => {
             </div>
           </div>
 
+          <div className="row">
+            <Regions />
+          </div>
+
           <div className="row mt-3">
             <div class="col-lg-12">
               <div class="row d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div className="col-lg-4">
-                  <h4 class="mb-3">Supervisor i History</h4>
+                  <h4 class="mb-3">Supervisor History</h4>
                 </div>
                 <div className="col-lg-6 d-flex">
                   <input type="date" class="form-control" />
@@ -181,7 +186,7 @@ const KanoEast = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default KanoEast
+export default KanoEast;
