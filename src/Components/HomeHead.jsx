@@ -5,7 +5,7 @@ const HomeHead = () => {
     <>
       <div class="col-lg-8">
         <div class="row">
-          <div class="col-lg-4 col-md-4">
+          <div class="col-lg-6 col-md-4">
             <div class="card card-block card-stretch card-height">
               <div class="card-body">
                 <div class="d-flex align-items-center mb-4 card-total-sale">
@@ -30,7 +30,7 @@ const HomeHead = () => {
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4">
+          <div class="col-lg-6 col-md-4">
             <div class="card card-block card-stretch card-height">
               <div class="card-body">
                 <div class="d-flex align-items-center mb-4 card-total-sale">
@@ -55,7 +55,7 @@ const HomeHead = () => {
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4">
+          {/* <div class="col-lg-4 col-md-4">
             <div class="card card-block card-stretch card-height">
               <div class="card-body">
                 <div class="d-flex align-items-center mb-4 card-total-sale">
@@ -79,7 +79,7 @@ const HomeHead = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
          
         </div>
       </div>
