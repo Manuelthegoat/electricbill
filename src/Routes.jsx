@@ -7,6 +7,7 @@ import AllOrders from "./Pages/AllOrders";
 import CreateCustomer from "./Pages/CreateCustomer";
 import CreateOrder from "./Pages/CreateOrder";
 import Home from "./Pages/Home";
+import OrderSummary from "./Pages/OrderSummary";
 import PurchaseUnits from "./Pages/PurchaseUnits";
 import Supervisors from "./Pages/Supervisors";
 import Supervisorsdetails from "./Pages/Supervisorsdetails";
@@ -31,6 +32,7 @@ const Routing = ({selectedItem}) => {
         <Route path="/purchase-units" element={<PurchaseUnits />} />
         <Route path="/transfer-units" element={<TransferUnits />} />
         <Route path="/transfered-units" element={<TransferedUnits />} />
+        <Route path="/order-summary" element={<OrderSummary />} />
       </Routes>
     </>
   );

@@ -241,7 +241,7 @@ const Sidebar = () => {
                   data-parent="#iq-sidebar-toggle"
                 >
                   <li class="">
-                    <a href="/all-orders">
+                    <a href="/order-summary">
                       <i class="fa-solid fa-minus"></i>
                       <span>Order Summary</span>
                     </a>
