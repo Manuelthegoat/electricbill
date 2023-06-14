@@ -51,7 +51,7 @@ const KanoEast = () => {
                       />
                     </div>
                     <div>
-                      <p class="mb-2">Total Units Sold:</p>
+                      <p class="mb-2">Unit Sold:</p>
                       <h4>1</h4>
                     </div>
                   </div>
