@@ -1,4 +1,6 @@
-import React from 'react'
+import React from "react";
+import Regions from "../Components/Regions";
+import Super from "./Super";
 
 const Supervisorsdetails = () => {
   return (
@@ -59,18 +61,17 @@ const Supervisorsdetails = () => {
             </div>
           </div>
 
-
           <div className="row mt-3">
+          <Super />
             <div class="col-lg-12">
-            <div class="row d-flex flex-wrap align-items-center justify-content-between mb-4">
+              <div class="row d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div className="col-lg-4">
-                <h4 class="mb-3">Supervisor i History</h4>
+                  <h4 class="mb-3">Supervisor History</h4>
                 </div>
                 <div className="col-lg-6 d-flex">
                   <input type="date" class="form-control" />
                   <input type="date" class="form-control" />
                 </div>
-               
               </div>
             </div>
             <div class="col-lg-12">
@@ -97,10 +98,7 @@ const Supervisorsdetails = () => {
                       <th>Amount</th>
                       <th>Date&Time</th>
                       <th>Period Of Payment</th>
-                      <th>Units Generated</th>
-                      <th>Units Sold</th>
-                      <th>Units Available</th>
-                      <th>Grand Total</th>
+
                       <th>Supervisor</th>
                       <th>Confirmation</th>
                       <th>Recurrent</th>
@@ -130,10 +128,7 @@ const Supervisorsdetails = () => {
                       <td>#10,000</td>
                       <td>01 jan 2021 (14:39)</td>
                       <td>January</td>
-                      <td>209</td>
-                      <td>76</td>
-                      <td>133</td>
-                      <td>243</td>
+
                       <td>Supervisor #198228</td>
                       <td>
                         <div class="badge badge-success">Paid</div>
@@ -169,11 +164,10 @@ const Supervisorsdetails = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Supervisorsdetails
+export default Supervisorsdetails;
