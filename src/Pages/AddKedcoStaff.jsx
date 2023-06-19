@@ -155,73 +155,25 @@ const AddKedcoStaff = () => {
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-4">
                         <div class="form-group">
                           <label>Payment Limit *</label>
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Enter Guarantor Name"
-                            required
-                          />
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Guarantor Phone Number *</label>
-                          <input
                             type="number"
                             class="form-control"
-                            placeholder="Enter Guarantor Phone Number"
+                            placeholder="Enter Payment Limit"
                             required
                           />
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-4">
                         <div class="form-group">
-                          <label>Guarantor Address *</label>
+                          <label>Password *</label>
                           <input
-                            type="number"
-                            class="form-control"
-                            placeholder="Enter Guarantor Address"
-                            required
-                          />
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Guarantor Occupation *</label>
-                          <input
-                            type="number"
-                            class="form-control"
-                            placeholder="Enter Guarantor Occupation"
-                            required
-                          />
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Password</label>
-                          <input
-                            type="text"
+                            type="password"
                             class="form-control"
                             placeholder="Enter Password"
-                            required
-                          />
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Confirm Password</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Enter Confirm Password"
                             required
                           />
                           <div class="help-block with-errors"></div>
