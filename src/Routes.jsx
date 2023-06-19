@@ -1,12 +1,14 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AddAgent from "./Pages/AddAgent";
+import AddKedcoStaff from "./Pages/AddKedcoStaff";
 import AgentDetails from "./Pages/AgentDetails";
 import Agents from "./Pages/Agents";
 import AllOrders from "./Pages/AllOrders";
 import CreateCustomer from "./Pages/CreateCustomer";
 import CreateOrder from "./Pages/CreateOrder";
 import Home from "./Pages/Home";
+import KedcoStaff from "./Pages/KedcoStaff";
 import OrderSummary from "./Pages/OrderSummary";
 import PurchaseUnits from "./Pages/PurchaseUnits";
 import Supervisors from "./Pages/Supervisors";
@@ -33,7 +35,8 @@ const Routing = ({selectedItem}) => {
         <Route path="/transfer-units" element={<TransferUnits />} />
         <Route path="/transfered-units" element={<TransferedUnits />} />
         <Route path="/order-summary" element={<OrderSummary />} />
-        <Route path="/kedco-staff" element={<OrderSummary />} />
+        <Route path="/kedco-staff" element={<KedcoStaff />} />
+        <Route path="/add-kedco-staff" element={<AddKedcoStaff />} />
       </Routes>
     </>
   );

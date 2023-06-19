@@ -306,6 +306,11 @@ const Sidebar = () => {
                     </a>
                   </li>
                   <li class="">
+                    <a href="/add-kedco-staff">
+                      <i class="fa-solid fa-minus"></i> <span>Add Kedco Staff</span>
+                    </a>
+                  </li>
+                  <li class="">
                     <a href="/supervisors">
                       <i class="fa-solid fa-minus"></i> <span>Supervisors</span>
                     </a>

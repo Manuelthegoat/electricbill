@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import KedcoStaff from "./KedcoStaff";
 
 const AddAgent = () => {
   const [selectedItem, setSelectedItem] = useState("Agent");
@@ -222,7 +221,6 @@ const AddAgent = () => {
         </div>
       </div>
       )}
-      {selectedItem === "Kedco" && <KedcoStaff />}
     </>
   );
 };
