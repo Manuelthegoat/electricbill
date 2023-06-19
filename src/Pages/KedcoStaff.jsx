@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-import KedcoStaff from "./KedcoStaff";
 
-const AddAgent = () => {
+const KedcoStaff = () => {
   const [selectedItem, setSelectedItem] = useState("Agent");
   const handleSelectChange = (event) => {
     setSelectedItem(event.target.value);
   };
   return (
-    <>
-    {selectedItem === "Agent" && (
+    <div>
       <div class="content-page">
         <div class="container-fluid add-form-list">
           <div class="row">
@@ -16,7 +14,7 @@ const AddAgent = () => {
               <div class="card">
                 <div class="card-header d-flex justify-content-between">
                   <div class="header-title">
-                    <h4 class="card-title">Create Agent</h4>
+                    <h4 class="card-title">Create Kedco</h4>
                   </div>
                 </div>
                 <div class="card-body">
@@ -221,10 +219,8 @@ const AddAgent = () => {
           </div>
         </div>
       </div>
-      )}
-      {selectedItem === "Kedco" && <KedcoStaff />}
-    </>
+    </div>
   );
 };
 
-export default AddAgent;
+export default KedcoStaff;

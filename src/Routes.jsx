@@ -33,6 +33,7 @@ const Routing = ({selectedItem}) => {
         <Route path="/transfer-units" element={<TransferUnits />} />
         <Route path="/transfered-units" element={<TransferedUnits />} />
         <Route path="/order-summary" element={<OrderSummary />} />
+        <Route path="/kedco-staff" element={<OrderSummary />} />
       </Routes>
     </>
   );
