@@ -70,31 +70,6 @@ const AddKedcoStaff = () => {
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Address *</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Enter Address"
-                            required
-                          />
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Gender</label>
-                          <select
-                            name="type"
-                            class="selectpicker form-control"
-                            data-style="py-0"
-                          >
-                            <option>Male</option>
-                            <option>Female</option>
-                          </select>
-                        </div>
-                      </div>
 
                       <div class="col-md-4">
                         <div class="form-group">
@@ -120,11 +95,11 @@ const AddKedcoStaff = () => {
                             class="selectpicker form-control"
                             data-style="py-0"
                           >
-                            <option>Kano West</option>
-                            <option>Kano Central</option>
-                            <option>Kano East</option>
-                            <option>Kano North</option>
-                            <option>Kano South</option>
+                            <option>Emmanuel</option>
+                            <option>Taiwo</option>
+                            <option>Sodiq</option>
+                            <option>Bayo</option>
+                            <option>Chinedu</option>
                           </select>
                         </div>
                       </div>
@@ -150,8 +125,8 @@ const AddKedcoStaff = () => {
                             data-style="py-0"
                           >
                             <option>Sales</option>
-                            <option>Supervisor</option>
-                            <option>Kedco Staff</option>
+                            {/* <option>Supervisor</option>
+                            <option>Kedco Staff</option> */}
                           </select>
                         </div>
                       </div>
@@ -193,7 +168,7 @@ const AddKedcoStaff = () => {
                       </div>
                     </div>
                     <button type="submit" class="btn btn-primary mr-2">
-                      Create Agent
+                      Create Kedco Staff
                     </button>
                   </form>
                 </div>
