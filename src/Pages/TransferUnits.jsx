@@ -36,7 +36,13 @@ const TransferUnits = () => {
                             <option>Kano Central</option>
                             <option>Kano East</option>
                             <option>Kano North</option>
-                            <option>Kano South</option>
+                            <option value="KanoSouth">Kano South</option>
+ <option value="KanoSouth">Jigawa South</option>
+                  <option value="KanoSouth">Jigawa North</option>
+                  <option value="KanoSouth">Katsina Central</option>
+                  <option value="KanoSouth">Katsina North</option>
+                  <option value="KanoSouth">Katsina South</option>
+
                           </select>
                         </div>
                       </div>

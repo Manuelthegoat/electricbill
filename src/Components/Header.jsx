@@ -39,12 +39,19 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                   onChange={handleSelectChange}
                   data-style="py-0"
                 >
-                  <option value="HQ" selected>HQ</option>
+                  <option value="HQ" selected>
+                    HQ
+                  </option>
                   <option value="KanoWest">Kano West</option>
                   <option value="KanoCentral">Kano Central</option>
                   <option value="KanoEast">Kano East</option>
                   <option value="KanoNorth">Kano North</option>
                   <option value="KanoSouth">Kano South</option>
+                  <option value="KanoSouth">Jigawa South</option>
+                  <option value="KanoSouth">Jigawa North</option>
+                  <option value="KanoSouth">Katsina Central</option>
+                  <option value="KanoSouth">Katsina North</option>
+                  <option value="KanoSouth">Katsina South</option>
                 </select>
               </div>
             </div>

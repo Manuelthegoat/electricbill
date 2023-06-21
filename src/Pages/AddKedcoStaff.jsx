@@ -83,7 +83,13 @@ const AddKedcoStaff = () => {
                             <option>Kano Central</option>
                             <option>Kano East</option>
                             <option>Kano North</option>
-                            <option>Kano South</option>
+                            <option value="KanoSouth">Kano South</option>
+ <option value="KanoSouth">Jigawa South</option>
+                  <option value="KanoSouth">Jigawa North</option>
+                  <option value="KanoSouth">Katsina Central</option>
+                  <option value="KanoSouth">Katsina North</option>
+                  <option value="KanoSouth">Katsina South</option>
+
                           </select>
                         </div>
                       </div>
@@ -116,7 +122,7 @@ const AddKedcoStaff = () => {
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label>User Type *</label>
                           <select
@@ -125,12 +131,15 @@ const AddKedcoStaff = () => {
                             data-style="py-0"
                           >
                             <option>Sales</option>
-                            {/* <option>Supervisor</option>
-                            <option>Kedco Staff</option> */}
+                            <option>Admin</option>
+                            <option>RM</option>
+                            <option>CRO</option>
+                            <option>Cashier</option>
+                            <option>Senior Cashier</option>
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      {/* <div class="col-md-4">
                         <div class="form-group">
                           <label>Payment Limit *</label>
                           <input
@@ -141,8 +150,8 @@ const AddKedcoStaff = () => {
                           />
                           <div class="help-block with-errors"></div>
                         </div>
-                      </div>
-                      <div class="col-md-4">
+                      </div> */}
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label>Password *</label>
                           <input
