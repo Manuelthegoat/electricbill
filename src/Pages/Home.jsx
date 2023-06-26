@@ -21,7 +21,7 @@ const Home = ({ selectedItem }) => {
               <HomeHead /> */}
               <Regions
                 title="Today Sales"
-                titleV="2003"
+                titleV="2002"
                 title2V="2003"
                 title3V="2003"
                 title2="Week Sales"
