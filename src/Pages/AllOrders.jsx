@@ -23,7 +23,14 @@ const AllOrders = () => {
                 </div>
               </div>
             </div>
-            <Regions />
+             <Regions
+                title="Today Sales"
+                titleV="2003"
+                title2V="2003"
+                title3V="2003"
+                title2="Week Sales"
+                title3="Month Sales"
+              />
             <div class="col-lg-12">
               <div class="table-responsive rounded mb-3">
                 <table class="data-table table mb-0 tbl-server-info">

@@ -80,7 +80,14 @@ const KanoSouth = () => {
           </div>
 
           <div className="row">
-            <Regions />
+             <Regions
+                title="Today Sales"
+                titleV="2003"
+                title2V="2003"
+                title3V="2003"
+                title2="Week Sales"
+                title3="Month Sales"
+              />
           </div>
 
           <div className="row mt-3">
