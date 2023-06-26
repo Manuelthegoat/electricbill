@@ -1,9 +1,193 @@
 import React from "react";
+import ReactApexChart from "react-apexcharts";
 
-const Regions = () => {
+const chartDatas = {
+  series: [
+    {
+      name: "Desktops",
+      data: [17, 23, 15, 28, 22, 32],
+    },
+  ],
+  colors: ["#FF7E41"],
+  chart: {
+    height: 150,
+    type: "line",
+    zoom: {
+      enabled: false,
+    },
+    dropShadow: {
+      enabled: true,
+      color: "#000",
+      top: 12,
+      left: 1,
+      blur: 2,
+      opacity: 0.2,
+    },
+    toolbar: {
+      show: false,
+    },
+    sparkline: {
+      enabled: true,
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    curve: "smooth",
+    width: 3,
+  },
+  title: {
+    text: "",
+    align: "left",
+  },
+  grid: {
+    row: {
+      colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
+      opacity: 0.5,
+    },
+  },
+  xaxis: {
+    categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+  },
+};
+
+const Regions = (props) => {
   return (
     <>
-      
+      <div className="col-lg-4">
+        <div class="card card-block card-stretch card-height-helf">
+          <div class="card-body">
+            <div class="d-flex align-items-top justify-content-between">
+              <div class="">
+                <p class="mb-0">Income</p>
+                <h5>$ 98,7800 K</h5>
+              </div>
+              <div class="card-header-toolbar d-flex align-items-center">
+                <div class="dropdown">
+                  <span
+                    class="dropdown-toggle dropdown-bg btn"
+                    id="dropdownMenuButton003"
+                    data-toggle="dropdown"
+                  >
+                    This Month<i class="ri-arrow-down-s-line ml-1"></i>
+                  </span>
+                  <div
+                    class="dropdown-menu dropdown-menu-right shadow-none"
+                    aria-labelledby="dropdownMenuButton003"
+                  >
+                    <a class="dropdown-item" href="#">
+                      Year
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      Month
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      Week
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <div id="layout1-chart-3" class="layout-chart-1"></div> */}
+            <ReactApexChart
+              options={chartDatas}
+              series={chartDatas.series}
+              class="layout-chart-1"
+              type="line"
+            />{" "}
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-4">
+        <div class="card card-block card-stretch card-height-helf">
+          <div class="card-body">
+            <div class="d-flex align-items-top justify-content-between">
+              <div class="">
+                <p class="mb-0">Income</p>
+                <h5>$ 98,7800 K</h5>
+              </div>
+              <div class="card-header-toolbar d-flex align-items-center">
+                <div class="dropdown">
+                  <span
+                    class="dropdown-toggle dropdown-bg btn"
+                    id="dropdownMenuButton003"
+                    data-toggle="dropdown"
+                  >
+                    This Month<i class="ri-arrow-down-s-line ml-1"></i>
+                  </span>
+                  <div
+                    class="dropdown-menu dropdown-menu-right shadow-none"
+                    aria-labelledby="dropdownMenuButton003"
+                  >
+                    <a class="dropdown-item" href="#">
+                      Year
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      Month
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      Week
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <div id="layout1-chart-3" class="layout-chart-1"></div> */}
+            <ReactApexChart
+              options={chartDatas}
+              series={chartDatas.series}
+              class="layout-chart-1"
+              type="line"
+            />{" "}
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-4">
+        <div class="card card-block card-stretch card-height-helf">
+          <div class="card-body">
+            <div class="d-flex align-items-top justify-content-between">
+              <div class="">
+                <p class="mb-0">Income</p>
+                <h5>$ 98,7800 K</h5>
+              </div>
+              <div class="card-header-toolbar d-flex align-items-center">
+                <div class="dropdown">
+                  <span
+                    class="dropdown-toggle dropdown-bg btn"
+                    id="dropdownMenuButton003"
+                    data-toggle="dropdown"
+                  >
+                    This Month<i class="ri-arrow-down-s-line ml-1"></i>
+                  </span>
+                  <div
+                    class="dropdown-menu dropdown-menu-right shadow-none"
+                    aria-labelledby="dropdownMenuButton003"
+                  >
+                    <a class="dropdown-item" href="#">
+                      Year
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      Month
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      Week
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <div id="layout1-chart-3" class="layout-chart-1"></div> */}
+            <ReactApexChart
+              options={chartDatas}
+              series={chartDatas.series}
+              class="layout-chart-1"
+              type="line"
+            />{" "}
+          </div>
+        </div>
+      </div>
+      {/*       
         <div class="col-lg-4 ">
           <div class="card card-block card-stretch card-height">
             <div class="card-body">
@@ -16,8 +200,8 @@ const Regions = () => {
                   />
                 </div>
                 <div>
-                  <p class="mb-2">Total Units</p>
-                  <h4>3154</h4>
+                  <p class="mb-2">{props.title}</p>
+                  <h4>{props.titleV}</h4>
                 </div>
               </div>
               <div class="iq-progress-bar mt-2">
@@ -41,8 +225,8 @@ const Regions = () => {
                   />
                 </div>
                 <div>
-                  <p class="mb-2">Unit Sold</p>
-                  <h4>98</h4>
+                  <p class="mb-2">{props.title2}</p>
+                  <h4>{props.title2V}</h4>
                 </div>
               </div>
               <div class="iq-progress-bar mt-2">
@@ -66,8 +250,8 @@ const Regions = () => {
                   />
                 </div>
                 <div>
-                  <p class="mb-2">Available Units</p>
-                  <h4>5</h4>
+                <p class="mb-2">{props.title3}</p>
+                  <h4>{props.title3V}</h4>
                 </div>
               </div>
               <div class="iq-progress-bar mt-2">
@@ -78,7 +262,7 @@ const Regions = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
     </>
   );
 };
