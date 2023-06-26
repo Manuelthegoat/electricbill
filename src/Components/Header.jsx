@@ -30,31 +30,7 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                 />
               </form>
             </div>
-            <div class="col-md-5 mt-3">
-              <div class="form-group">
-                <select
-                  name="type"
-                  class=" form-control"
-                  value={selectedItem}
-                  onChange={handleSelectChange}
-                  data-style="py-0"
-                >
-                  <option value="HQ" selected>
-                    HQ
-                  </option>
-                  <option value="KanoWest">Kano West</option>
-                  <option value="KanoCentral">Kano Central</option>
-                  <option value="KanoEast">Kano East</option>
-                  <option value="KanoNorth">Kano North</option>
-                  <option value="KanoSouth">Kano South</option>
-                  <option value="KanoSouth">Jigawa South</option>
-                  <option value="KanoSouth">Jigawa North</option>
-                  <option value="KanoSouth">Katsina Central</option>
-                  <option value="KanoSouth">Katsina North</option>
-                  <option value="KanoSouth">Katsina South</option>
-                </select>
-              </div>
-            </div>
+
             <div class="d-flex align-items-center">
               <button
                 class="navbar-toggler"
@@ -95,6 +71,66 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                           </a>
                         </div>
                       </form>
+                    </div>
+                  </li>
+                  <select
+                    name="type"
+                    class=" form-control"
+                    value={selectedItem}
+                    onChange={handleSelectChange}
+                    data-style="py-0"
+                  >
+                    <option value="HQ" selected>
+                      HQ
+                    </option>
+                    <option value="KanoWest">Kano West</option>
+                    <option value="KanoCentral">Kano Central</option>
+                    <option value="KanoEast">Kano East</option>
+                    <option value="KanoNorth">Kano North</option>
+                    <option value="KanoSouth">Kano South</option>
+                    <option value="KanoSouth">Jigawa South</option>
+                    <option value="KanoSouth">Jigawa North</option>
+                    <option value="KanoSouth">Katsina Central</option>
+                    <option value="KanoSouth">Katsina North</option>
+                    <option value="KanoSouth">Katsina South</option>
+                  </select>
+                  <li class="nav-item nav-icon dropdown">
+                    <a
+                      href="#"
+                      class="search-toggle dropdown-toggle btn border add-btn"
+                      id="dropdownMenuButton02"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Transaction
+                    </a>
+                    <div
+                      class="iq-sub-dropdown dropdown-menu"
+                      aria-labelledby="dropdownMenuButton2"
+                    >
+                      <div class="card shadow-none m-0">
+                        <div class="card-body p-3">
+                          <a class="iq-sub-card" href="#">
+                            Transaction List
+                          </a>
+                          <a class="iq-sub-card" href="#">
+                            Performance
+                          </a>
+                          <a class="iq-sub-card" href="#">
+                            Remmitance
+                          </a>
+                          <a class="iq-sub-card" href="#">
+                            Summary
+                          </a>
+                          <a class="iq-sub-card" href="#">
+                            Analysis
+                          </a>
+                          <a class="iq-sub-card" href="#">
+                            Reprint / Cancellations
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </li>
                   <li class="nav-item nav-icon dropdown">
