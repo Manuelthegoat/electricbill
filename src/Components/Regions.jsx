@@ -61,7 +61,7 @@ const Regions = (props) => {
             <div class="d-flex align-items-top justify-content-between">
               <div class="">
                 <p class="mb-0">{props.title}</p>
-                <h5>{props.titleV}</h5>
+                <h5>&#8358;{props.titleV}</h5>
               </div>
               <div class="card-header-toolbar d-flex align-items-center">
                 <div class="dropdown">
@@ -105,7 +105,7 @@ const Regions = (props) => {
             <div class="d-flex align-items-top justify-content-between">
               <div class="">
                 <p class="mb-0">{props.title2}</p>
-                <h5>{props.title2V}</h5>
+                <h5>&#8358;{props.title2V}</h5>
               </div>
               <div class="card-header-toolbar d-flex align-items-center">
                 <div class="dropdown">
@@ -149,7 +149,7 @@ const Regions = (props) => {
             <div class="d-flex align-items-top justify-content-between">
               <div class="">
                 <p class="mb-0">{props.title3}</p>
-                <h5>{props.title3V}</h5>
+                <h5>&#8358;{props.title3V}</h5>
               </div>
               <div class="card-header-toolbar d-flex align-items-center">
                 <div class="dropdown">

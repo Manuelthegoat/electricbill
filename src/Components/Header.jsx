@@ -103,7 +103,7 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Transaction
+                      Transaction &#8964;
                     </a>
                     <div
                       class="iq-sub-dropdown dropdown-menu"
