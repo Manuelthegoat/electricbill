@@ -25,11 +25,15 @@ const TransferedUnits = () => {
             </div>
              <Regions
                 title="Today Sales"
-                titleV="2003"
-                title2V="2003"
-                title3V="2003"
+                titleV={formattedNumber}
+                title2V={formattedNumber}
+                title3V={formattedNumber}
+                title4V={formattedNumber}
+                title5V={formattedNumber}
                 title2="Week Sales"
                 title3="Month Sales"
+                title4="Remit Sales"
+                title5="Un-Remit Sales"
               />
             <div class="col-lg-12">
               <div class="table-responsive rounded mb-3">

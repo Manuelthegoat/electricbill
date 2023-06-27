@@ -2,6 +2,8 @@ import React from "react";
 import Regions from "../Components/Regions";
 
 const KanoCentral = () => {
+  const number = 2003883; // Replace with your number
+  const formattedNumber = number.toLocaleString();
   return (
     <div>
       <div className="content-page">
@@ -81,11 +83,15 @@ const KanoCentral = () => {
           <div className="row">
              <Regions
                 title="Today Sales"
-                titleV="2003"
-                title2V="2003"
-                title3V="2003"
+                titleV={formattedNumber}
+                title2V={formattedNumber}
+                title3V={formattedNumber}
+                title4V={formattedNumber}
+                title5V={formattedNumber}
                 title2="Week Sales"
                 title3="Month Sales"
+                title4="Remit Sales"
+                title5="Un-Remit Sales"
               />
           </div>
 
