@@ -18,18 +18,10 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                 <h5 class="logo-title ml-3">Skoten Startup</h5>
               </a>
             </div>
-            <div class="iq-search-bar device-search">
-              <form action="#" class="searchbox">
-                <a class="search-link" href="#">
-                  <i class="ri-search-line"></i>
-                </a>
-                <input
-                  type="text"
-                  class="text search-input"
-                  placeholder="Search here..."
-                />
-              </form>
-            </div>
+            <div className="col-lg-6 d-flex">
+            <input type="date" class="form-control" placeholder="mm/dd/yyyy"  />
+            <input type="date" class="form-control" placeholder="mm/dd/yyyy" />
+          </div>
 
             <div class="d-flex align-items-center">
               <button

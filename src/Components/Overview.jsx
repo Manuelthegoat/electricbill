@@ -8,10 +8,18 @@ const Overview = () => {
           <div className="col-lg-6">
             <h4 class="">All Token Sold</h4>
           </div>
-          <div className="col-lg-6 d-flex">
-            <input type="date" class="form-control" placeholder="mm/dd/yyyy"  />
-            <input type="date" class="form-control" placeholder="mm/dd/yyyy" />
-          </div>
+          <div class="iq-search-bar device-search">
+              <form action="#" class="searchbox">
+                <a class="search-link" href="#">
+                  <i class="ri-search-line"></i>
+                </a>
+                <input
+                  type="text"
+                  class="text search-input"
+                  placeholder="Search here..."
+                />
+              </form>
+            </div>
           {/* <a href="page-add-sale.html" class="btn btn-primary add-list">
             <i class="las la-plus mr-3"></i>Add Order
           </a> */}

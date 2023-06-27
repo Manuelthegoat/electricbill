@@ -11,6 +11,8 @@ import KanoWest from "./KanoWest";
 import MonthlyCollection from "./MonthlyCollection";
 
 const Home = ({ selectedItem }) => {
+  const number = 2003883; // Replace with your number
+  const formattedNumber = number.toLocaleString();
   return (
     <>
       {selectedItem === "HQ" && (
@@ -21,9 +23,9 @@ const Home = ({ selectedItem }) => {
               <HomeHead /> */}
               <Regions
                 title="Today Sales"
-                titleV="209938"
-                title2V="2003898"
-                title3V="2003883"
+                titleV={formattedNumber}
+                title2V={formattedNumber}
+                title3V={formattedNumber}
                 title2="Week Sales"
                 title3="Month Sales"
               />

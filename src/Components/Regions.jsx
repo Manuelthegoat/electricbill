@@ -64,38 +64,11 @@ const Regions = (props) => {
                 <h5>&#8358;{props.titleV}</h5>
               </div>
               <div class="card-header-toolbar d-flex align-items-center">
-                <div class="dropdown">
-                  <span
-                    class="dropdown-toggle dropdown-bg btn"
-                    id="dropdownMenuButton003"
-                    data-toggle="dropdown"
-                  >
-                    This Month<i class="ri-arrow-down-s-line ml-1"></i>
-                  </span>
-                  <div
-                    class="dropdown-menu dropdown-menu-right shadow-none"
-                    aria-labelledby="dropdownMenuButton003"
-                  >
-                    <a class="dropdown-item" href="#">
-                      Year
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      Month
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      Week
-                    </a>
-                  </div>
-                </div>
+                
               </div>
             </div>
             {/* <div id="layout1-chart-3" class="layout-chart-1"></div> */}
-            <ReactApexChart
-              options={chartDatas}
-              series={chartDatas.series}
-              class="layout-chart-1"
-              type="line"
-            />{" "}
+           {" "}
           </div>
         </div>
       </div>
@@ -108,38 +81,11 @@ const Regions = (props) => {
                 <h5>&#8358;{props.title2V}</h5>
               </div>
               <div class="card-header-toolbar d-flex align-items-center">
-                <div class="dropdown">
-                  <span
-                    class="dropdown-toggle dropdown-bg btn"
-                    id="dropdownMenuButton003"
-                    data-toggle="dropdown"
-                  >
-                    This Month<i class="ri-arrow-down-s-line ml-1"></i>
-                  </span>
-                  <div
-                    class="dropdown-menu dropdown-menu-right shadow-none"
-                    aria-labelledby="dropdownMenuButton003"
-                  >
-                    <a class="dropdown-item" href="#">
-                      Year
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      Month
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      Week
-                    </a>
-                  </div>
-                </div>
+                
               </div>
             </div>
             {/* <div id="layout1-chart-3" class="layout-chart-1"></div> */}
-            <ReactApexChart
-              options={chartDatas}
-              series={chartDatas.series}
-              class="layout-chart-1"
-              type="line"
-            />{" "}
+           {" "}
           </div>
         </div>
       </div>
@@ -152,38 +98,11 @@ const Regions = (props) => {
                 <h5>&#8358;{props.title3V}</h5>
               </div>
               <div class="card-header-toolbar d-flex align-items-center">
-                <div class="dropdown">
-                  <span
-                    class="dropdown-toggle dropdown-bg btn"
-                    id="dropdownMenuButton003"
-                    data-toggle="dropdown"
-                  >
-                    This Month<i class="ri-arrow-down-s-line ml-1"></i>
-                  </span>
-                  <div
-                    class="dropdown-menu dropdown-menu-right shadow-none"
-                    aria-labelledby="dropdownMenuButton003"
-                  >
-                    <a class="dropdown-item" href="#">
-                      Year
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      Month
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      Week
-                    </a>
-                  </div>
-                </div>
+                
               </div>
             </div>
             {/* <div id="layout1-chart-3" class="layout-chart-1"></div> */}
-            <ReactApexChart
-              options={chartDatas}
-              series={chartDatas.series}
-              class="layout-chart-1"
-              type="line"
-            />{" "}
+           {" "}
           </div>
         </div>
       </div>

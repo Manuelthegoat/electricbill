@@ -20,7 +20,7 @@ const chartData = {
   plotOptions: {
     bar: {
       horizontal: false,
-      columnWidth: "30%",
+      columnWidth: "80%",
       endingShape: "rounded",
     },
   },
@@ -102,46 +102,6 @@ const MonthlyCollection = () => {
                   <a class="dropdown-item" href="#">
                     Week
                   </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-body pb-2">
-            <div class="d-flex flex-wrap align-items-center mt-2">
-              <div class="d-flex align-items-center progress-order-left">
-                <div
-                  class="progress progress-round m-0 orange conversation-bar"
-                  data-percent="46"
-                >
-                  <span class="progress-left">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <span class="progress-right">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <div class="progress-value text-secondary">46%</div>
-                </div>
-                <div class="progress-value ml-3 pr-5 border-right">
-                  <h5>&#8358;12,6598</h5>
-                  <p class="mb-0">Average Orders</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center ml-5 progress-order-right">
-                <div
-                  class="progress progress-round m-0 primary conversation-bar"
-                  data-percent="46"
-                >
-                  <span class="progress-left">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <span class="progress-right">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <div class="progress-value text-primary">46%</div>
-                </div>
-                <div class="progress-value ml-3">
-                  <h5>&#8358;59,8478</h5>
-                  <p class="mb-0">Top Orders</p>
                 </div>
               </div>
             </div>
