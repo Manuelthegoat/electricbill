@@ -98,11 +98,11 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                     </option>
                     <option value="">Transaction List</option>
                     <option value="">Performance</option>
-                    <option value="">Remmitance</option>
+                    <option value="">Remitance</option>
                     <option value="">Summary</option>
                     <option value="">Analysis</option>
-                    <option value="">Remmit Sales</option>
-                    <option value="">NonRemmit Sales</option>
+                    <option value="">Remit Sales</option>
+                    <option value="">NonRemit Sales</option>
                     <option value="">Reprint/Cancellations</option>
                    
                   </select>

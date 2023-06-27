@@ -106,6 +106,40 @@ const Regions = (props) => {
           </div>
         </div>
       </div>
+      <div className="col-lg-4">
+        <div class="card card-block card-stretch card-height-helf">
+          <div class="card-body">
+            <div class="d-flex align-items-top justify-content-between">
+              <div class="">
+                <p class="mb-0">{props.title4}</p>
+                <h5>&#8358;{props.title4V}</h5>
+              </div>
+              <div class="card-header-toolbar d-flex align-items-center">
+                
+              </div>
+            </div>
+            {/* <div id="layout1-chart-3" class="layout-chart-1"></div> */}
+           {" "}
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-4">
+        <div class="card card-block card-stretch card-height-helf">
+          <div class="card-body">
+            <div class="d-flex align-items-top justify-content-between">
+              <div class="">
+                <p class="mb-0">{props.title5}</p>
+                <h5>&#8358;{props.title5V}</h5>
+              </div>
+              <div class="card-header-toolbar d-flex align-items-center">
+                
+              </div>
+            </div>
+            {/* <div id="layout1-chart-3" class="layout-chart-1"></div> */}
+           {" "}
+          </div>
+        </div>
+      </div>
       {/*       
         <div class="col-lg-4 ">
           <div class="card card-block card-stretch card-height">

@@ -26,8 +26,12 @@ const Home = ({ selectedItem }) => {
                 titleV={formattedNumber}
                 title2V={formattedNumber}
                 title3V={formattedNumber}
+                title4V={formattedNumber}
+                title5V={formattedNumber}
                 title2="Week Sales"
                 title3="Month Sales"
+                title4="Remit Sales"
+                title5="Un-Remit Sales"
               />
               <MonthlyCollection />
 
