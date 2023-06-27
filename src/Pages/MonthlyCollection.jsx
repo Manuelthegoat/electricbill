@@ -4,12 +4,12 @@ import ReactApexChart from "react-apexcharts";
 const chartData = {
   series: [
     {
-      name: "Total Likes",
+      name: "Total Payments",
       data: [86, 80, 84, 95, 83, 75, 88, 76, 86, 93, 85, 65],
     },
     {
-      name: "Total Share",
-      data: [76, 72, 76, 85, 74, 69, 80, 68, 78, 85, 77, 55],
+      name: "Total Orders",
+    //   data: [76, 72, 76, 85, 74, 69, 80, 68, 78, 85, 77, 55],
     },
   ],
   chart: {
@@ -65,7 +65,7 @@ const chartData = {
   tooltip: {
     y: {
       formatter: function (val) {
-        return "$ " + val + " thousands";
+        return "$ " + val ;
       },
     },
   },
