@@ -403,7 +403,7 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                             />
                           </div>
                           <div class="p-3">
-                            <h5 class="mb-1">JoanDuo@property.com</h5>
+                            <h5 class="mb-1">michael@skoten.com</h5>
                             <p class="mb-0">Since 10 march, 2020</p>
                             <div class="d-flex align-items-center justify-content-center mt-3">
                               <a
