@@ -28,7 +28,6 @@ const AddKedcoStaff = () => {
                             type="number"
                             class="form-control"
                             placeholder="Enter Staff Id"
-                            value={`#${randomNumber}`}
                             required
                           />
                           <div class="help-block with-errors"></div>
