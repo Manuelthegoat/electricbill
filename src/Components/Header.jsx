@@ -85,46 +85,28 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                     <option value="KanoSouth">Katsina Central</option>
                     <option value="KanoSouth">Katsina North</option>
                     <option value="KanoSouth">Katsina South</option>
+                  </select>&nbsp;
+                  <select
+                    name="type"
+                    class=" form-control"
+                    value={selectedItem}
+                    onChange={handleSelectChange}
+                    data-style="py-0"
+                  >
+                    <option value="HQ" selected>
+                      Transaction
+                    </option>
+                    <option value="">Transaction List</option>
+                    <option value="">Performance</option>
+                    <option value="">Remmitance</option>
+                    <option value="">Summary</option>
+                    <option value="">Analysis</option>
+                    <option value="">Remmit Sales</option>
+                    <option value="">NonRemmit Sales</option>
+                    <option value="">Reprint/Cancellations</option>
+                   
                   </select>
-                  <li class="nav-item nav-icon dropdown">
-                    <a
-                      href="#"
-                      class="search-toggle dropdown-toggle btn border add-btn"
-                      id="dropdownMenuButton02"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Transaction &#8964;
-                    </a>
-                    <div
-                      class="iq-sub-dropdown dropdown-menu"
-                      aria-labelledby="dropdownMenuButton2"
-                    >
-                      <div class="card shadow-none m-0">
-                        <div class="card-body p-3">
-                          <a class="iq-sub-card" href="#">
-                            Transaction List
-                          </a>
-                          <a class="iq-sub-card" href="#">
-                            Performance
-                          </a>
-                          <a class="iq-sub-card" href="#">
-                            Remmitance
-                          </a>
-                          <a class="iq-sub-card" href="#">
-                            Summary
-                          </a>
-                          <a class="iq-sub-card" href="#">
-                            Analysis
-                          </a>
-                          <a class="iq-sub-card" href="#">
-                            Reprint / Cancellations
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+ 
                   <li class="nav-item nav-icon dropdown">
                     <a
                       href="#"
@@ -164,78 +146,11 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                                 class="badge badge-primary badge-card"
                                 href="#"
                               >
-                                3
+                                0
                               </a>
                             </div>
                           </div>
-                          <div class="px-3 pt-0 pb-0 sub-card">
-                            <a href="#" class="iq-sub-card">
-                              <div class="media align-items-center cust-card py-3 border-bottom">
-                                <div class="">
-                                  <img
-                                    class="avatar-50 rounded-small"
-                                    src="assets/images/user/01.jpg"
-                                    alt="01"
-                                  />
-                                </div>
-                                <div class="media-body ml-3">
-                                  <div class="d-flex align-items-center justify-content-between">
-                                    <h6 class="mb-0">Emma Watson</h6>
-                                    <small class="text-dark">
-                                      <b>12 : 47 pm</b>
-                                    </small>
-                                  </div>
-                                  <small class="mb-0">
-                                    Lorem ipsum dolor sit amet
-                                  </small>
-                                </div>
-                              </div>
-                            </a>
-                            <a href="#" class="iq-sub-card">
-                              <div class="media align-items-center cust-card py-3 border-bottom">
-                                <div class="">
-                                  <img
-                                    class="avatar-50 rounded-small"
-                                    src="assets/images/user/02.jpg"
-                                    alt="02"
-                                  />
-                                </div>
-                                <div class="media-body ml-3">
-                                  <div class="d-flex align-items-center justify-content-between">
-                                    <h6 class="mb-0">Ashlynn Franci</h6>
-                                    <small class="text-dark">
-                                      <b>11 : 30 pm</b>
-                                    </small>
-                                  </div>
-                                  <small class="mb-0">
-                                    Lorem ipsum dolor sit amet
-                                  </small>
-                                </div>
-                              </div>
-                            </a>
-                            <a href="#" class="iq-sub-card">
-                              <div class="media align-items-center cust-card py-3">
-                                <div class="">
-                                  <img
-                                    class="avatar-50 rounded-small"
-                                    src="assets/images/user/03.jpg"
-                                    alt="03"
-                                  />
-                                </div>
-                                <div class="media-body ml-3">
-                                  <div class="d-flex align-items-center justify-content-between">
-                                    <h6 class="mb-0">Kianna Carder</h6>
-                                    <small class="text-dark">
-                                      <b>11 : 21 pm</b>
-                                    </small>
-                                  </div>
-                                  <small class="mb-0">
-                                    Lorem ipsum dolor sit amet
-                                  </small>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
+                      
                           <a
                             class="right-ic btn btn-primary btn-block position-relative p-2"
                             href="#"
