@@ -415,7 +415,7 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                             <p class="mb-0">Since 10 march, 2020</p>
                             <div class="d-flex align-items-center justify-content-center mt-3">
                               <a
-                                href="https://templates.iqonic.design/posdash/html/app/user-profile.html"
+                               
                                 class="btn border mr-2"
                               >
                                 Profile
