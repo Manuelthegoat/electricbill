@@ -57,7 +57,7 @@ const CreateCustomer = () => {
                           <label>Region *</label>
                           <select
                             name="type"
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                           >
                             <option>Kano West</option>

@@ -74,7 +74,7 @@ const AddAgent = () => {
                           <label>Gender</label>
                           <select
                             name="type"
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                           >
                             <option>Male</option>
@@ -98,7 +98,7 @@ const AddAgent = () => {
                           <label>Region *</label>
                           <select
                             name="type"
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                           >
                             <option>Kano West</option>
@@ -120,7 +120,7 @@ const AddAgent = () => {
                           <label>Role *</label>
                           <select
                             name="type"
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                             value={selectedItem}
                             onChange={handleSelectChange}

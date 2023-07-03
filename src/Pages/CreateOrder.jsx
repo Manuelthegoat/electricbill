@@ -82,7 +82,7 @@ const CreateOrder = () => {
                             name="type"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                           >
                             <option selected>Manuel U.</option>
@@ -137,7 +137,7 @@ const CreateOrder = () => {
                           <label>Region *</label>
                           <select
                             name="type"
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                             value={region}
                             onChange={(e) => setRegion(e.target.value)}
@@ -161,7 +161,7 @@ const CreateOrder = () => {
                           <label>Type Of Apartment*</label>
                           <select
                             name="type"
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                             value={ApartmentType}
                             onChange={(e) => setApartment(e.target.value)}
@@ -192,7 +192,7 @@ const CreateOrder = () => {
                           <label>Payment Method</label>
                           <select
                             name="type"
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                             onChange={handleSelectChange}
                           >
@@ -207,7 +207,7 @@ const CreateOrder = () => {
                           <label>Agent*</label>
                           <select
                             name="type"
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                           >
                             <option>Agent 177827</option>
