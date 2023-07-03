@@ -75,7 +75,7 @@ const AddKedcoStaff = () => {
                           <label>Region *</label>
                           <select
                             name="type"
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                           >
                             <option>Kano West</option>
@@ -83,12 +83,11 @@ const AddKedcoStaff = () => {
                             <option>Kano East</option>
                             <option>Kano North</option>
                             <option value="KanoSouth">Kano South</option>
- <option value="KanoSouth">Jigawa South</option>
-                  <option value="KanoSouth">Jigawa North</option>
-                  <option value="KanoSouth">Katsina Central</option>
-                  <option value="KanoSouth">Katsina North</option>
-                  <option value="KanoSouth">Katsina South</option>
-
+                            <option value="KanoSouth">Jigawa South</option>
+                            <option value="KanoSouth">Jigawa North</option>
+                            <option value="KanoSouth">Katsina Central</option>
+                            <option value="KanoSouth">Katsina North</option>
+                            <option value="KanoSouth">Katsina South</option>
                           </select>
                         </div>
                       </div>
@@ -97,7 +96,7 @@ const AddKedcoStaff = () => {
                           <label>CSP *</label>
                           <select
                             name="type"
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                           >
                             <option>Emmanuel</option>
@@ -113,7 +112,7 @@ const AddKedcoStaff = () => {
                           <label>User Status *</label>
                           <select
                             name="type"
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                           >
                             <option>Active</option>
@@ -126,7 +125,7 @@ const AddKedcoStaff = () => {
                           <label>User Type *</label>
                           <select
                             name="type"
-                            class="selectpicker form-control"
+                            class=" form-control"
                             data-style="py-0"
                           >
                             <option>Sales</option>
