@@ -4,24 +4,22 @@ import ReactApexChart from "react-apexcharts";
 const chartData = {
   series: [
     {
-      name: "Total Payments",
+      name: "Total Orders",
       data: [86, 80, 84, 95, 83, 75, 88, 76, 86, 93, 85, 65],
     },
-    {
-      name: "Total Orders",
-    //   data: [76, 72, 76, 85, 74, 69, 80, 68, 78, 85, 77, 55],
-    },
+    
   ],
   chart: {
     type: "bar",
-    height: 300,
+    height: 400,
   },
-  colors: ["black", "red"],
+  
   plotOptions: {
     bar: {
       horizontal: false,
       columnWidth: "80%",
       endingShape: "rounded",
+      
     },
   },
   dataLabels: {
@@ -65,7 +63,7 @@ const chartData = {
   tooltip: {
     y: {
       formatter: function (val) {
-        return "$ " + val ;
+        return  val ;
       },
     },
   },
@@ -111,7 +109,7 @@ const MonthlyCollection = () => {
             <ReactApexChart
               options={chartData}
               series={chartData.series}
-              height={500}
+              height={400}
               type="bar"
             />
           </div>
