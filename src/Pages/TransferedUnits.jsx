@@ -2,6 +2,8 @@ import React from "react";
 import Regions from "../Components/Regions";
 
 const TransferedUnits = () => {
+  const number = 2003883; // Replace with your number
+  const formattedNumber = number.toLocaleString();
   return (
     <div>
       <div className="content-page">

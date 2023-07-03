@@ -2,6 +2,8 @@ import React from "react";
 import Regions from "../Components/Regions";
 
 const AllOrders = () => {
+  const number = 2003883; // Replace with your number
+  const formattedNumber = number.toLocaleString();
   return (
     <>
       <div className="content-page">
