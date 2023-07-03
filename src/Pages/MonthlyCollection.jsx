@@ -16,7 +16,7 @@ const chartData = {
     type: "bar",
     height: 300,
   },
-  colors: ["#32BDEA", "#FF7E41"],
+  colors: ["black", "red"],
   plotOptions: {
     bar: {
       horizontal: false,
@@ -111,6 +111,7 @@ const MonthlyCollection = () => {
             <ReactApexChart
               options={chartData}
               series={chartData.series}
+              height={500}
               type="bar"
             />
           </div>
