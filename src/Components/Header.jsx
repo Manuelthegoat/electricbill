@@ -89,9 +89,11 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                   <select
                     name="type"
                     class=" form-control"
+                    value={selectedItem}
+                    onChange={handleSelectChange}
                     data-style="py-0"
                   >
-                    <option value="" selected>
+                    <option value="HQ" selected>
                       Transaction
                     </option>
                     <option value="">Transaction List</option>
