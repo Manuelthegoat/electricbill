@@ -81,7 +81,7 @@ const AddKedcoStaff = () => {
                             <option>Kano West</option>
                             <option>Kano Central</option>
                             <option>Kano East</option>
-                            <option>Kano North</option>
+                            <option>Kano North.</option>
                             <option value="KanoSouth">Kano South</option>
                             <option value="KanoSouth">Jigawa South</option>
                             <option value="KanoSouth">Jigawa North</option>
