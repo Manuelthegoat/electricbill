@@ -11,6 +11,7 @@ import Home from "./Pages/Home";
 import KedcoStaff from "./Pages/KedcoStaff";
 import OrderSummary from "./Pages/OrderSummary";
 import PurchaseUnits from "./Pages/PurchaseUnits";
+import Remittance from "./Pages/Remittance";
 import Supervisors from "./Pages/Supervisors";
 import Supervisorsdetails from "./Pages/Supervisorsdetails";
 import TokenUnits from "./Pages/TokenUnits";
@@ -37,6 +38,7 @@ const Routing = ({selectedItem}) => {
         <Route path="/order-summary" element={<OrderSummary />} />
         <Route path="/kedco-staff" element={<KedcoStaff />} />
         <Route path="/add-kedco-staff" element={<AddKedcoStaff />} />
+        <Route path="/remittance" element={<Remittance />} />
       </Routes>
     </>
   );

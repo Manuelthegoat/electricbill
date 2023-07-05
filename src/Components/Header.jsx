@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import HeaderModal from "./HeaderModal";
 
 const Header = ({ handleSelectChange, selectedItem }) => {
+  const navigate = useNavigate()
+  if (selectedItem === "Remitance"){
+    navigate('/remittance')
+    window.location.reload()
+  }
   return (
     <>
       <div class="iq-top-navbar">
@@ -98,7 +104,7 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                     </option>
                     <option value="">Transaction List</option>
                     <option value="">Performance</option>
-                    <option value="">Remitance</option>
+                    <option value="Remitance">Remitance</option>
                     <option value="">Summary</option>
                     <option value="">Analysis</option>
                     <option value="">Remit Sales</option>
