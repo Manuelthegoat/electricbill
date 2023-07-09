@@ -22,7 +22,7 @@ function App() {
       </div> */}
       <div class="wrapper">
         <Sidebar />
-        <Header selectedItem={selectedItem} handleSelectChange={handleSelectChange} />
+        <Header selectedItem={selectedItem} setSelectedItem={setSelectedItem} handleSelectChange={handleSelectChange} />
       </div>
       <Routing selectedItem={selectedItem} />
       <Footer />

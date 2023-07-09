@@ -2,12 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import HeaderModal from "./HeaderModal";
 
-const Header = ({ handleSelectChange, selectedItem }) => {
-  const navigate = useNavigate()
-  if (selectedItem === "Remitance"){
-    navigate('/remittance')
-    window.location.reload()
+const Header = ({ handleSelectChange, selectedItem, setSelectedItem }) => {
+  const navigate = useNavigate();
+  if (selectedItem === "Remitance") {
+    navigate("/remittance");
+    window.location.reload();
   }
+
   return (
     <>
       <div class="iq-top-navbar">
@@ -25,9 +26,17 @@ const Header = ({ handleSelectChange, selectedItem }) => {
               </a>
             </div>
             <div className="col-lg-6 d-flex">
-            <input type="date" class="form-control" placeholder="mm/dd/yyyy"  />
-            <input type="date" class="form-control" placeholder="mm/dd/yyyy" />
-          </div>
+              <input
+                type="date"
+                class="form-control"
+                placeholder="mm/dd/yyyy"
+              />
+              <input
+                type="date"
+                class="form-control"
+                placeholder="mm/dd/yyyy"
+              />
+            </div>
 
             <div class="d-flex align-items-center">
               <button
@@ -91,7 +100,8 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                     <option value="KanoSouth">Katsina Central</option>
                     <option value="KanoSouth">Katsina North</option>
                     <option value="KanoSouth">Katsina South</option>
-                  </select>&nbsp;
+                  </select>
+                  &nbsp;
                   <select
                     name="type"
                     class=" form-control"
@@ -99,20 +109,17 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                     onChange={handleSelectChange}
                     data-style="py-0"
                   >
-                    <option value="HQ" selected>
-                      Transaction
-                    </option>
+                    <option value="" selected>Choose Option</option>
+                    <option value="">Transaction</option>
                     <option value="">Transaction List</option>
                     <option value="">Performance</option>
-                    <option value="Remitance">Remitance</option>
+                    <option value="Remitance">Remittance</option>
                     <option value="">Summary</option>
                     <option value="">Analysis</option>
                     <option value="">Remit Sales</option>
                     <option value="">NonRemit Sales</option>
                     <option value="">Reprint/Cancellations</option>
-                   
                   </select>
- 
                   <li class="nav-item nav-icon dropdown">
                     <a
                       href="#"
@@ -156,7 +163,7 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                               </a>
                             </div>
                           </div>
-                      
+
                           <a
                             class="right-ic btn btn-primary btn-block position-relative p-2"
                             href="#"
@@ -327,12 +334,7 @@ const Header = ({ handleSelectChange, selectedItem }) => {
                             <h5 class="mb-1">michael@skoten.com</h5>
                             <p class="mb-0">Since 10 march, 2020</p>
                             <div class="d-flex align-items-center justify-content-center mt-3">
-                              <a
-                               
-                                class="btn border mr-2"
-                              >
-                                Profile
-                              </a>
+                              <a class="btn border mr-2">Profile</a>
                               <a href="auth-sign-in.html" class="btn border">
                                 Sign Out
                               </a>
