@@ -60,7 +60,6 @@ const Home = ({ handleSelectChange, selectedItem, setSelectedItem }) => {
                   class=" form-control"
                   // value={selectedItem}
                   // onChange={handleSelectChange}
-                  data-style="py-0"
                 >
                   <option value="" selected>
                     Select A Region
