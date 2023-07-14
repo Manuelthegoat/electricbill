@@ -94,16 +94,39 @@ const AddKedcoStaff = () => {
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>CSP *</label>
-                          <select
-                            name="type"
-                            class=" form-control"
-                            data-style="py-0"
-                          >
-                            <option>Emmanuel</option>
-                            <option>Taiwo</option>
-                            <option>Sodiq</option>
-                            <option>Bayo</option>
-                            <option>Chinedu</option>
+                          <select name="" id="" className="form-control">
+                            <option value="">Choose Csp</option>
+                            <option>Ajingi</option>
+                            <option>Albasu</option>
+                            <option>Bagwai</option>
+                            <option>Bebeji</option>
+                            <option>Bichi</option>
+                            <option>Bunkure</option>
+                            <option>Dala</option>
+                            <option>Dambatta</option>
+                            <option>Dawakin Kudu</option>
+                            <option>Dawakin Tofa</option>
+                            <option>Doguwa</option>
+                            <option>Fagge</option>
+                            <option>Gabasawa</option>
+                            <option>Garko</option>
+                            <option>Garum Mallam</option>
+                            <option>Gaya</option>
+                            <option>Gezawa</option>
+                            <option>Gwale</option>
+                            <option>Gwarzo</option>
+                            <option>Kabo</option>
+                            <option>Kano Municipal</option>
+                            <option>Karaye</option>
+                            <option>Kibiya</option>
+                            <option>Kiru</option>
+                            <option>Kumbotso</option>
+                            <option>Kunchi</option>
+                            <option>Kura</option>
+                            <option>Madobi</option>
+                            <option>Makoda</option>
+                            <option>Minjibir</option>
+                            <option>Nasarawa</option>
                           </select>
                         </div>
                       </div>

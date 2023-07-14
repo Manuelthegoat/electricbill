@@ -14,7 +14,7 @@ const Sidebar = () => {
             <h5 class="logo-title light-logo ml-3">Skoten</h5>
           </a>
           <div class="iq-menu-bt-sidebar ml-0">
-            <i class="fa-solid fa-bars wrapper-menu"></i>
+            <i class="pl-15 fa-solid fa-bars wrapper-menu"></i>
           </div>
         </div>
         <div class="data-scrollbar" data-scroll="1">

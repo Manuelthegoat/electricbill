@@ -26,16 +26,7 @@ const Header = ({ handleSelectChange, selectedItem, setSelectedItem }) => {
               </a>
             </div>
             <div className="col-lg-6 d-flex">
-              <input
-                type="date"
-                class="form-control"
-                placeholder="mm/dd/yyyy"
-              />
-              <input
-                type="date"
-                class="form-control"
-                placeholder="mm/dd/yyyy"
-              />
+             
             </div>
 
             <div class="d-flex align-items-center">
@@ -80,46 +71,7 @@ const Header = ({ handleSelectChange, selectedItem, setSelectedItem }) => {
                       </form>
                     </div>
                   </li>
-                  <select
-                    name="type"
-                    class=" form-control"
-                    value={selectedItem}
-                    onChange={handleSelectChange}
-                    data-style="py-0"
-                  >
-                    <option value="HQ" selected>
-                      HQ
-                    </option>
-                    <option value="KanoWest">Kano West</option>
-                    <option value="KanoCentral">Kano Central</option>
-                    <option value="KanoEast">Kano East</option>
-                    <option value="KanoNorth">Kano North</option>
-                    <option value="KanoSouth">Kano South</option>
-                    <option value="KanoSouth">Jigawa South</option>
-                    <option value="KanoSouth">Jigawa North</option>
-                    <option value="KanoSouth">Katsina Central</option>
-                    <option value="KanoSouth">Katsina North</option>
-                    <option value="KanoSouth">Katsina South</option>
-                  </select>
-                  &nbsp;
-                  <select
-                    name="type"
-                    class=" form-control"
-                    value={selectedItem}
-                    onChange={handleSelectChange}
-                    data-style="py-0"
-                  >
-                    <option value="" selected>Choose Option</option>
-                    <option value="">Transaction</option>
-                    <option value="">Transaction List</option>
-                    <option value="">Performance</option>
-                    <option value="Remitance">Remittance</option>
-                    <option value="">Summary</option>
-                    <option value="">Analysis</option>
-                    <option value="">Remit Sales</option>
-                    <option value="">NonRemit Sales</option>
-                    <option value="">Reprint/Cancellations</option>
-                  </select>
+                 
                   <li class="nav-item nav-icon dropdown">
                     <a
                       href="#"
