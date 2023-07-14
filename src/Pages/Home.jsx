@@ -25,37 +25,8 @@ const Home = ({ handleSelectChange, selectedItem, setSelectedItem }) => {
         <div className="content-page">
           <div className="container-fluid">
             <div className="row mb-3">
-              <div className="col-lg-3 d-flex">
-                <input
-                  type="date"
-                  class="form-control"
-                  placeholder="mm/dd/yyyy"
-                />
-              </div>
-              <div className="col-lg-3">
+              <div className="col-lg-2">
                 <select
-                  name="type"
-                  class=" form-control"
-                  // value={selectedItem}
-                  // onChange={handleSelectChange}
-                  data-style="py-0"
-                >
-                  <option value="HQ" selected>
-                    HQ
-                  </option>
-                  <option value="KanoWest">Kano West</option>
-                  <option value="KanoCentral">Kano Central</option>
-                  <option value="KanoEast">Kano East</option>
-                  <option value="KanoNorth">Kano North</option>
-                  <option value="KanoSouth">Kano South</option>
-                  <option value="KanoSouth">Jigawa South</option>
-                  <option value="KanoSouth">Jigawa North</option>
-                  <option value="KanoSouth">Katsina Central</option>
-                  <option value="KanoSouth">Katsina North</option>
-                  <option value="KanoSouth">Katsina South</option>
-                </select>
-              </div>
-              {/* <select
                   name="type"
                   class=" form-control"
                   value={selectedItem}
@@ -74,8 +45,41 @@ const Home = ({ handleSelectChange, selectedItem, setSelectedItem }) => {
                   <option value="">Remit Sales</option>
                   <option value="">NonRemit Sales</option>
                   <option value="">Reprint/Cancellations</option>
-                </select> */}
-              <div className="col-lg-3">
+                </select>
+              </div>
+              <div className="col-lg-2 d-flex">
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="mm/dd/yyyy"
+                />
+              </div>
+              <div className="col-lg-2">
+                <select
+                  name="type"
+                  class=" form-control"
+                  // value={selectedItem}
+                  // onChange={handleSelectChange}
+                  data-style="py-0"
+                >
+                  <option value="" selected>
+                    Select A Region
+                  </option>
+                  <option value="">HQ</option>
+                  <option value="KanoWest">Kano West</option>
+                  <option value="KanoCentral">Kano Central</option>
+                  <option value="KanoEast">Kano East</option>
+                  <option value="KanoNorth">Kano North</option>
+                  <option value="KanoSouth">Kano South</option>
+                  <option value="KanoSouth">Jigawa South</option>
+                  <option value="KanoSouth">Jigawa North</option>
+                  <option value="KanoSouth">Katsina Central</option>
+                  <option value="KanoSouth">Katsina North</option>
+                  <option value="KanoSouth">Katsina South</option>
+                </select>
+              </div>
+
+              <div className="col-lg-2">
                 <select name="" id="" className="form-control">
                   <option value="">Choose Csp</option>
                   <option>Ajingi</option>
@@ -111,10 +115,13 @@ const Home = ({ handleSelectChange, selectedItem, setSelectedItem }) => {
                   <option>Nasarawa</option>
                 </select>
               </div>
-              <div className="col-lg-3">
+              <div className="col-lg-2">
                 <select name="" id="" className="form-control">
                   <option value="">Choose Operator</option>
                 </select>
+              </div>
+              <div className="col-lg-2">
+                <button className="btn btn-primary">Search</button>
               </div>
             </div>
             <div className="row">
