@@ -3,9 +3,8 @@ import PaystackPop from "@paystack/inline-js";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
-
 const CreateOrder = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [email, setemail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -34,15 +33,15 @@ const CreateOrder = () => {
           title: "Payment Successful",
           text: `Worth: ${amount} Token : ${randomNumber}`,
         });
-        navigate('/all-orders')
+        navigate("/all-orders");
       },
-      onCancel(){
+      onCancel() {
         Swal.file({
           icon: "error",
           title: "Oops",
-          text: 'You have cancelled the transaction'
-        })
-      }
+          text: "You have cancelled the transaction",
+        });
+      },
     });
   };
   const handleSelectChange = (event) => {
@@ -51,13 +50,12 @@ const CreateOrder = () => {
     if (selectedValue === "cash") {
       setIsVisible(true);
       setPay(false);
-    }else if (selectedValue === 'transfer'){
-      setIsVisible(false)
-      setPay(true)
-    }
-    else{
-      setPay(true)
-      setIsVisible(false)
+    } else if (selectedValue === "transfer") {
+      setIsVisible(false);
+      setPay(true);
+    } else {
+      setPay(true);
+      setIsVisible(false);
     }
   };
   return (
@@ -147,12 +145,11 @@ const CreateOrder = () => {
                             <option>Kano East</option>
                             <option>Kano North</option>
                             <option value="KanoSouth">Kano South</option>
- <option value="KanoSouth">Jigawa South</option>
-                  <option value="KanoSouth">Jigawa North</option>
-                  <option value="KanoSouth">Katsina Central</option>
-                  <option value="KanoSouth">Katsina North</option>
-                  <option value="KanoSouth">Katsina South</option>
-
+                            <option value="KanoSouth">Jigawa South</option>
+                            <option value="KanoSouth">Jigawa North</option>
+                            <option value="KanoSouth">Katsina Central</option>
+                            <option value="KanoSouth">Katsina North</option>
+                            <option value="KanoSouth">Katsina South</option>
                           </select>
                         </div>
                       </div>
@@ -202,7 +199,20 @@ const CreateOrder = () => {
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-12">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>CSP*</label>
+                          <select
+                            name="type"
+                            class=" form-control"
+                            data-style="py-0"
+                          >
+                            <option>BICHI</option>
+                           
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label>Agent*</label>
                           <select

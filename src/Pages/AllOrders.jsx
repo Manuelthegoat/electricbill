@@ -62,6 +62,8 @@ const AllOrders = () => {
                       <th>Date&Time</th>
                       <th>Period Of Payment</th>
                       <th>Agent</th>
+                      <th>CSP</th>
+                      <th>Operator</th>
                       <th>Confirmation</th>
                       <th>Recurrent</th>
                       <th>Action</th>
@@ -91,6 +93,8 @@ const AllOrders = () => {
                       <td>01 jan 2021 (14:39)</td>
                       <td>January</td>
                       <td>Agent #198228</td>
+                      <td>Bichi</td>
+                      <td>Chinedu</td>
                       <td>
                         <div class="badge badge-success">Paid</div>
                       </td>
