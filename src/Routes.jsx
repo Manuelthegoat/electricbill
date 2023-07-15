@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Transactionss from "./Components/Transactionss";
 import AddAgent from "./Pages/AddAgent";
 import AddKedcoStaff from "./Pages/AddKedcoStaff";
 import AgentDetails from "./Pages/AgentDetails";
@@ -18,11 +19,30 @@ import TokenUnits from "./Pages/TokenUnits";
 import TransferedUnits from "./Pages/TransferedUnits";
 import TransferUnits from "./Pages/TransferUnits";
 
-const Routing = ({selectedItem}) => {
+const Routing = ({
+  selectedItem,
+  setSelectedItem,
+  handleSelectChange,
+  isLoading,
+  regions,
+  selectedCsps,
+}) => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home selectedItem={selectedItem} />} />
+        <Route
+          path="/"
+          element={
+            <Home
+              selectedItem={selectedItem}
+              regions={regions}
+              isLoading={isLoading}
+              setSelectedItem={setSelectedItem}
+              handleSelectChange={handleSelectChange}
+              selectedCsps={selectedCsps}
+            />
+          }
+        />
         <Route path="/create-customer" element={<CreateCustomer />} />
         <Route path="/all-orders" element={<AllOrders />} />
         <Route path="/create-order" element={<CreateOrder />} />
@@ -39,6 +59,7 @@ const Routing = ({selectedItem}) => {
         <Route path="/kedco-staff" element={<KedcoStaff />} />
         <Route path="/add-kedco-staff" element={<AddKedcoStaff />} />
         <Route path="/remittance" element={<Remittance />} />
+        <Route path="/transactions" element={<Transactionss />} />
       </Routes>
     </>
   );

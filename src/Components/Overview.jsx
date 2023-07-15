@@ -9,17 +9,17 @@ const Overview = () => {
             <h4 class="">All Token Sold</h4>
           </div>
           <div class="iq-search-bar device-search">
-              <form action="#" class="searchbox">
-                <a class="search-link" href="#">
-                  <i class="ri-search-line"></i>
-                </a>
-                <input
-                  type="text"
-                  class="text search-input"
-                  placeholder="Search here..."
-                />
-              </form>
-            </div>
+            <form action="#" class="searchbox">
+              <a class="search-link" href="#">
+                <i class="ri-search-line"></i>
+              </a>
+              <input
+                type="text"
+                class="text search-input"
+                placeholder="Search here..."
+              />
+            </form>
+          </div>
           {/* <a href="page-add-sale.html" class="btn btn-primary add-list">
             <i class="las la-plus mr-3"></i>Add Order
           </a> */}
@@ -45,6 +45,10 @@ const Overview = () => {
                 <th>Address&nbsp;&nbsp;&nbsp;</th>
                 <th>Apartment</th>
                 <th>Payment Method</th>
+                <th>Agent</th>
+                <th>Regions</th>
+                <th>CSP</th>
+                <th>Operator</th>
                 <th>Amount</th>
                 <th>Token</th>
                 <th>Token Units</th>
@@ -71,6 +75,10 @@ const Overview = () => {
                 <td>
                   <div class="badge badge-success">Paid Cash</div>
                 </td>
+                <td>Ayomied</td>
+                <td>Kano West</td>
+                <td>Ajingi</td>
+                <td>Chinedu</td>
                 <td>#10,000</td>
                 <td>009977645563778</td>
                 <td>20KW</td>
@@ -128,6 +136,10 @@ const Overview = () => {
                 <td>
                   <div class="badge badge-success">Paid Cash</div>
                 </td>
+                <td>Ayomied</td>
+                <td>Kano West</td>
+                <td>Ajingi</td>
+                <td>Chinedu</td>
                 <td>#10,000</td>
                 <td>009977645563778</td>
                 <td>20KW</td>
@@ -185,6 +197,10 @@ const Overview = () => {
                 <td>
                   <div class="badge badge-success">Paid Cash</div>
                 </td>
+                <td>Ayomied</td>
+                <td>Kano West</td>
+                <td>Ajingi</td>
+                <td>Chinedu</td>
                 <td>#10,000</td>
                 <td>009977645563778</td>
                 <td>20KW</td>
@@ -242,6 +258,10 @@ const Overview = () => {
                 <td>
                   <div class="badge badge-success">Paid Cash</div>
                 </td>
+                <td>Ayomied</td>
+                <td>Kano West</td>
+                <td>Ajingi</td>
+                <td>Chinedu</td>
                 <td>#10,000</td>
                 <td>009977645563778</td>
                 <td>20KW</td>
@@ -299,6 +319,10 @@ const Overview = () => {
                 <td>
                   <div class="badge badge-success">Paid Cash</div>
                 </td>
+                <td>Ayomied</td>
+                <td>Kano West</td>
+                <td>Ajingi</td>
+                <td>Chinedu</td>
                 <td>#10,000</td>
                 <td>009977645563778</td>
                 <td>20KW</td>

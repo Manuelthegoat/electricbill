@@ -1,13 +1,21 @@
 import React from "react";
 import Regions from "../Components/Regions";
+import RegionsComponents from "../Components/RegionsComponents";
 
-const KanoSouth = () => {
+const KanoSouth = ({ handleSelectChange, selectedItem, setSelectedItem, regions, selectedCsps }) => {
   const number = 2003883; // Replace with your number
   const formattedNumber = number.toLocaleString();
   return (
     <div>
       <div className="content-page">
         <div className="container-fluid">
+          <RegionsComponents
+            handleSelectChange={handleSelectChange}
+            selectedItem={selectedItem}
+            setSelectedItem={setSelectedItem}
+            regions={regions}
+            selectedCsps={selectedCsps}
+          />
           <div className="row">
             <div class="col-lg-3">
               <div class="card card-transparent card-block card-stretch card-height bToken-none">
@@ -82,18 +90,18 @@ const KanoSouth = () => {
           </div>
 
           <div className="row">
-             <Regions
-                title="Today Sales"
-                titleV={formattedNumber}
-                title2V={formattedNumber}
-                title3V={formattedNumber}
-                title4V={formattedNumber}
-                title5V={formattedNumber}
-                title2="Week Sales"
-                title3="Month Sales"
-                title4="Remit Sales"
-                title5="Un-Remit Sales"
-              />
+            <Regions
+              title="Today Sales"
+              titleV={formattedNumber}
+              title2V={formattedNumber}
+              title3V={formattedNumber}
+              title4V={formattedNumber}
+              title5V={formattedNumber}
+              title2="Week Sales"
+              title3="Month Sales"
+              title4="Remit Sales"
+              title5="Un-Remit Sales"
+            />
           </div>
 
           <div className="row mt-3">
