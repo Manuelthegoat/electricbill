@@ -24,11 +24,16 @@ function App() {
     setRegions(extractedRegions);
   }, []);
   useEffect(() => {
-    const allOperators = dummyData?.reduce((acc, { operators }) => {
-      return [...acc, ...operators];
-    }, []);
-    setOperators(allOperators);
-  }, []);
+    const selectedRegionData = dummyData?.find(
+      ({ val }) => val === selectedItem 
+    );
+    if (selectedRegionData) {
+      const allOperators = selectedRegionData?.operators;
+      setOperators(allOperators);
+    } else {
+      setOperators([]);
+    }
+  }, [selectedItem]);
   const handleSelectChange = (event) => {
     setSelectedItem(event.target.value);
 

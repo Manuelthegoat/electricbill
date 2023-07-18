@@ -2,7 +2,17 @@ import React from "react";
 import Regions from "../Components/Regions";
 import RegionsComponents from "../Components/RegionsComponents";
 
-const KanoEast = ({ handleSelectChange, selectedItem, setSelectedItem, regions, selectedCsps }) => {
+const KanoEast = ({
+  handleSelectChange,
+  selectedItem,
+  setSelectedItem,
+  regions,
+  selectedCsps,
+  csping,
+  handleCspChange,
+  selectedCsp,
+  operators,
+}) => {
   const number = 2003883; // Replace with your number
   const formattedNumber = number.toLocaleString();
   return (
@@ -15,6 +25,7 @@ const KanoEast = ({ handleSelectChange, selectedItem, setSelectedItem, regions, 
             setSelectedItem={setSelectedItem}
             regions={regions}
             selectedCsps={selectedCsps}
+            operators={operators}
           />
           <div className="row">
             <div class="col-lg-3">
@@ -49,8 +60,9 @@ const KanoEast = ({ handleSelectChange, selectedItem, setSelectedItem, regions, 
                 </div>
               </div>
             </div>
+            {selectedCsp && (
             <div class="col-lg-3 col-md-3">
-              <div class="card card-block card-stretch card-height">
+              <div class="card card-block ">
                 <div class="card-body">
                   <div class="d-flex align-items-center card-total-sale">
                     <div class="icon iq-icon-box-2 bg-info-light">
@@ -61,13 +73,14 @@ const KanoEast = ({ handleSelectChange, selectedItem, setSelectedItem, regions, 
                       />
                     </div>
                     <div>
-                      <p class="mb-2">Unit Sold:</p>
-                      <h4>1</h4>
+                      <p class="mb-2">CSP:</p>
+                      <h4>{csping}</h4>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            )}
             <div class="col-lg-3 col-md-3">
               <div class="card card-block card-stretch card-height">
                 <div class="card-body">

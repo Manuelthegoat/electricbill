@@ -94,6 +94,10 @@ const Home = ({
           setSelectedItem={setSelectedItem}
           regions={regions}
           selectedCsps={selectedCsps}
+          csping={selectedCsp}
+          selectedCsp={selectedCsp}
+          handleCspChange={handleCspChange}
+          operators={operators}
         />
       )}
       {selectedItem === "KanoEast" && (
@@ -103,6 +107,10 @@ const Home = ({
           setSelectedItem={setSelectedItem}
           regions={regions}
           selectedCsps={selectedCsps}
+          csping={selectedCsp}
+          selectedCsp={selectedCsp}
+          handleCspChange={handleCspChange}
+          operators={operators}
         />
       )}
       {selectedItem === "KanoNorth" && (
@@ -112,6 +120,10 @@ const Home = ({
           setSelectedItem={setSelectedItem}
           regions={regions}
           selectedCsps={selectedCsps}
+          csping={selectedCsp}
+          selectedCsp={selectedCsp}
+          handleCspChange={handleCspChange}
+          operators={operators}
         />
       )}
       {selectedItem === "KanoSouth" && (
@@ -121,6 +133,10 @@ const Home = ({
           setSelectedItem={setSelectedItem}
           regions={regions}
           selectedCsps={selectedCsps}
+          csping={selectedCsp}
+          selectedCsp={selectedCsp}
+          handleCspChange={handleCspChange}
+          operators={operators}
         />
       )}
     </>
