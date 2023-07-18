@@ -56,16 +56,15 @@ const RegionsComponents = ({
         </div>
 
         <div className="col-lg-2">
-          {selectedCsps?.length > 0 && (
-            <select className="form-control">
-              <option value="">Select a CSP</option>
-              {selectedCsps?.map((csp, index) => (
-                <option key={index} value={csp}>
-                  {csp}
-                </option>
-              ))}
-            </select>
-          )}
+          <select className="form-control">
+            <option value="">Select a CSP</option>
+            {selectedCsps?.map((csp, index) => (
+              <option key={index} value={csp}>
+                {csp}
+              </option>
+            ))}
+          </select>
+
           {/* <select name="" id="" className="form-control">
             <option value="">Choose Csp</option>
           </select> */}
