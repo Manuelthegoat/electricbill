@@ -21,11 +21,15 @@ import TransferUnits from "./Pages/TransferUnits";
 
 const Routing = ({
   selectedItem,
+  handleCspChange,
+  selectedCsp,
   setSelectedItem,
   handleSelectChange,
   isLoading,
   regions,
   selectedCsps,
+  selectedCspValue,
+  operators,
 }) => {
   return (
     <>
@@ -35,6 +39,10 @@ const Routing = ({
           element={
             <Home
               selectedItem={selectedItem}
+              operators={operators}
+              selectedCspValue={selectedCspValue}
+              selectedCsp={selectedCsp}
+              handleCspChange={handleCspChange}
               regions={regions}
               isLoading={isLoading}
               setSelectedItem={setSelectedItem}

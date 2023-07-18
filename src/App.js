@@ -10,9 +10,11 @@ import dummyData from "./dummyData";
 
 function App() {
   const [selectedItem, setSelectedItem] = useState("HQ");
+  const [selectedCsp, setSelectedCsp] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [regions, setRegions] = useState([]);
   const [selectedCsps, setSelectedCsps] = useState([]);
+  const [operators, setOperators] = useState([]);
 
   useEffect(() => {
     const extractedRegions = dummyData?.map((data) => ({
@@ -21,20 +23,31 @@ function App() {
     }));
     setRegions(extractedRegions);
   }, []);
+  useEffect(() => {
+    const allOperators = dummyData?.reduce((acc, { operators }) => {
+      return [...acc, ...operators];
+    }, []);
+    setOperators(allOperators);
+  }, []);
   const handleSelectChange = (event) => {
     setSelectedItem(event.target.value);
-    
+
     const selectedRegionData = dummyData?.find(
       (data) => data?.val === selectedItem
     );
     if (selectedRegionData) {
       setSelectedCsps(selectedRegionData?.csps);
+      setSelectedCsp("");
     } else {
       setSelectedCsps([]);
+      setSelectedCsp("");
     }
   };
-  // console.log(dummyData)
-
+  const handleCspChange = (event) => {
+    const selectedCspValue = event.target.value;
+    setSelectedCsp(selectedCspValue);
+  };
+  console.log(selectedCsp);
   return (
     <div>
       {/* <div id="loading">
@@ -51,6 +64,9 @@ function App() {
       </div>
       <Routing
         selectedItem={selectedItem}
+        operators={operators}
+        selectedCsp={selectedCsp}
+        handleCspChange={handleCspChange}
         isLoading={isLoading}
         setSelectedItem={setSelectedItem}
         handleSelectChange={handleSelectChange}

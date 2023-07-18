@@ -5,9 +5,12 @@ const RegionsComponents = ({
   handleSelectChange,
   selectedItem,
   setSelectedItem,
+  handleCspChange,
+  selectedCsp,
   isLoading,
   regions,
   selectedCsps,
+  operators,
 }) => {
   return (
     <>
@@ -56,7 +59,11 @@ const RegionsComponents = ({
         </div>
 
         <div className="col-lg-2">
-          <select className="form-control">
+          <select
+            className="form-control"
+            value={selectedCsp}
+            onChange={handleCspChange}
+          >
             <option value="">Select a CSP</option>
             {selectedCsps?.map((csp, index) => (
               <option key={index} value={csp}>
@@ -71,7 +78,11 @@ const RegionsComponents = ({
         </div>
         <div className="col-lg-2">
           <select name="" id="" className="form-control">
-            <option value="">Choose Operator</option>
+            {operators?.map((operator, index) => (
+              <option key={index} value={operator}>
+                {operator}
+              </option>
+            ))}
           </select>
         </div>
         {/* <div className="col-lg-2">

@@ -19,6 +19,9 @@ const Home = ({
   setSelectedItem,
   isLoading,
   selectedCsps,
+  selectedCsp,
+  handleCspChange,
+  operators,
 }) => {
   const number = 2003883; // Replace with your number
   const formattedNumber = number.toLocaleString();
@@ -44,6 +47,9 @@ const Home = ({
               isLoading={isLoading}
               regions={regions}
               selectedCsps={selectedCsps}
+              handleCspChange={handleCspChange}
+              selectedCsp={selectedCsp}
+              operators={operators}
             />
             <div className="row">
               {/* <LoggedIn />
@@ -74,6 +80,11 @@ const Home = ({
           setSelectedItem={setSelectedItem}
           regions={regions}
           selectedCsps={selectedCsps}
+          csping={selectedCsp}
+          selectedCsp={selectedCsp}
+          handleCspChange={handleCspChange}
+          operators={operators}
+         
         />
       )}
       {selectedItem === "KanoCentral" && (
