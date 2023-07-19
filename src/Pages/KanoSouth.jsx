@@ -71,7 +71,7 @@ const KanoSouth = ({
             </div>
             {selectedCsp && (
               <div class="col-lg-3 col-md-3">
-                <div class="card card-block ">
+                <div class="card card-block card-stretch card-height align-items-center">
                   <div class="card-body">
                     <div class="d-flex align-items-center card-total-sale">
                       <div class="icon iq-icon-box-2 bg-info-light">
