@@ -45,7 +45,7 @@ const KanoEast = ({
                       <br />
                       08012345678
                     </p>
-                    <h4 class="mt-3">Supervisor #188354</h4>
+                    <h4 class="mt-3">Operator #188354</h4>
                   </div>
                 </div>
               </div>
@@ -62,7 +62,7 @@ const KanoEast = ({
                       />
                     </div>
                     <div>
-                      <p class="mb-2">Supervisor Region:</p>
+                      <p class="mb-2">Operator Region:</p>
                       <h4>KANO East</h4>
                     </div>
                   </div>
@@ -102,7 +102,7 @@ const KanoEast = ({
                       />
                     </div>
                     <div>
-                      <p class="mb-2">Supervisor Total Units:</p>
+                      <p class="mb-2">Operator Total Units:</p>
                       <h4>1</h4>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ const KanoEast = ({
             <div class="col-lg-12">
               <div class="row d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div className="col-lg-4">
-                  <h4 class="mb-3">Supervisor History</h4>
+                  <h4 class="mb-3">Operator History</h4>
                 </div>
                 <div className="col-lg-6 d-flex">
                   <input type="date" class="form-control" />
@@ -162,7 +162,7 @@ const KanoEast = ({
                       <th>Amount</th>
                       <th>Date&Time</th>
                       <th>Period Of Payment</th>
-                      <th>Supervisor</th>
+                      <th>Operator</th>
                       <th>Confirmation</th>
                       <th>Recurrent</th>
                       <th>Action</th>
@@ -191,7 +191,7 @@ const KanoEast = ({
                       <td>#10,000</td>
                       <td>01 jan 2021 (14:39)</td>
                       <td>January</td>
-                      <td>Supervisor #198228</td>
+                      <td>Operator #198228</td>
                       <td>
                         <div class="badge badge-success">Paid</div>
                       </td>

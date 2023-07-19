@@ -12,6 +12,9 @@ const KanoSouth = ({
   handleCspChange,
   selectedCsp,
   operators,
+  handleOperatorChange,
+  selectedOperator,
+  operate,
 }) => {
   const number = 2003883; // Replace with your number
   const formattedNumber = number.toLocaleString();
@@ -24,23 +27,29 @@ const KanoSouth = ({
             selectedItem={selectedItem}
             setSelectedItem={setSelectedItem}
             regions={regions}
+            selectedCsp={selectedCsp}
+            handleCspChange={handleCspChange}
             selectedCsps={selectedCsps}
             operators={operators}
+            selectedOperator={selectedOperator}
+            handleOperatorChange={handleOperatorChange}
           />
           <div className="row">
-            <div class="col-lg-3">
-              <div class="card card-transparent card-block card-stretch card-height bToken-none">
-                <div class="card-body p-0 mt-lg-2 mt-0">
-                  <h3 class="mb-3">NEDU R.</h3>
-                  <p class="mb-0 mr-4">
-                    techmint@techmint.com
-                    <br />
-                    08012345678
-                  </p>
-                  <h4 class="mt-3">Supervisor #188354</h4>
+            {selectedOperator && (
+              <div class="col-lg-3">
+                <div class="card card-transparent card-block card-stretch card-height bToken-none">
+                  <div class="card-body p-0 mt-lg-2 mt-0">
+                    <h3 class="mb-3">{operate}</h3>
+                    <p class="mb-0 mr-4">
+                      techmint@techmint.com
+                      <br />
+                      08012345678
+                    </p>
+                    <h4 class="mt-3">Operator #188354</h4>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
             <div class="col-lg-3 col-md-3">
               <div class="card card-block card-stretch card-height">
                 <div class="card-body">
@@ -53,7 +62,7 @@ const KanoSouth = ({
                       />
                     </div>
                     <div>
-                      <p class="mb-2">Supervisor Region:</p>
+                      <p class="mb-2">Operator Region:</p>
                       <h4>KANO South</h4>
                     </div>
                   </div>
@@ -93,7 +102,7 @@ const KanoSouth = ({
                       />
                     </div>
                     <div>
-                      <p class="mb-2">Supervisor Total Units:</p>
+                      <p class="mb-2">Operator Total Units:</p>
                       <h4>1</h4>
                     </div>
                   </div>
@@ -121,7 +130,7 @@ const KanoSouth = ({
             <div class="col-lg-12">
               <div class="row d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div className="col-lg-4">
-                  <h4 class="mb-3">Supervisor History</h4>
+                  <h4 class="mb-3">Operator History</h4>
                 </div>
                 <div className="col-lg-6 d-flex">
                   <input type="date" class="form-control" />
@@ -153,7 +162,7 @@ const KanoSouth = ({
                       <th>Amount</th>
                       <th>Date&Time</th>
                       <th>Period Of Payment</th>
-                      <th>Supervisor</th>
+                      <th>Operator</th>
                       <th>Confirmation</th>
                       <th>Recurrent</th>
                       <th>Action</th>
@@ -182,7 +191,7 @@ const KanoSouth = ({
                       <td>#10,000</td>
                       <td>01 jan 2021 (14:39)</td>
                       <td>January</td>
-                      <td>Supervisor #198228</td>
+                      <td>Operator #198228</td>
                       <td>
                         <div class="badge badge-success">Paid</div>
                       </td>

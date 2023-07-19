@@ -143,15 +143,18 @@ const Home = ({
       )}
       {selectedItem === "KanoSouth" && (
         <KanoSouth
-          handleSelectChange={handleSelectChange}
-          selectedItem={selectedItem}
-          setSelectedItem={setSelectedItem}
-          regions={regions}
-          selectedCsps={selectedCsps}
-          csping={selectedCsp}
-          selectedCsp={selectedCsp}
-          handleCspChange={handleCspChange}
-          operators={operators}
+        handleSelectChange={handleSelectChange}
+        selectedItem={selectedItem}
+        setSelectedItem={setSelectedItem}
+        regions={regions}
+        selectedCsps={selectedCsps}
+        csping={selectedCsp}
+        selectedCsp={selectedCsp}
+        handleCspChange={handleCspChange}
+        operators={operators}
+        selectedOperator={selectedOperator}
+        handleOperatorChange={handleOperatorChange}
+        operate={selectedOperator}
         />
       )}
     </>
