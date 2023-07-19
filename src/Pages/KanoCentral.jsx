@@ -36,7 +36,7 @@ const KanoCentral = ({
                 <div class="card-body p-0 mt-lg-2 mt-0">
                   <h3 class="mb-3">CHINEDU R.</h3>
                   <p class="mb-0 mr-4">
-                    manuelcreation247@gmail.com
+                    techmint@techmint.com
                     <br />
                     08012345678
                   </p>
@@ -173,7 +173,7 @@ const KanoCentral = ({
                           <label for="checkbox2" class="mb-0"></label>
                         </div>
                       </td>
-                      <td>Manuel U.</td>
+                      <td>Emeka Tech.</td>
                       <td>08012345678</td>
                       <td>no 7 jesus street</td>
                       <td>Nigeria</td>

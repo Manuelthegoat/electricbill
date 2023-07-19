@@ -61,7 +61,7 @@ const Agents = () => {
                       <td>Manuel&nbsp;U.</td>
                       <td>08012345678</td>
                       <td>no&nbsp;7&nbsp;jesus&nbsp;street</td>
-                      <td>manuelcreation247@gmail.com</td>
+                      <td>techmint@techmint.com</td>
                       <td>
                         <img
                           class="avatar-50 rounded-small"

@@ -81,7 +81,7 @@ const AllOrders = () => {
                           <label for="checkbox2" class="mb-0"></label>
                         </div>
                       </td>
-                      <td>Manuel U.</td>
+                      <td>Emeka Tech.</td>
                       <td>08012345678</td>
                       <td>no 7 jesus street</td>
                       <td>Nigeria</td>

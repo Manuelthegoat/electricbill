@@ -83,7 +83,7 @@ const CreateOrder = () => {
                             class=" form-control"
                             data-style="py-0"
                           >
-                            <option selected>Manuel U.</option>
+                            <option selected>Emeka Tech.</option>
                           </select>
                         </div>
                       </div>
