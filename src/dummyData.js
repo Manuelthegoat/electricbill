@@ -3,67 +3,67 @@ const dummyData = [
     region: 'HQ',
     val: 'HQ',
     csps: ['Bichi', 'Bunkure'],
-    operators: ['Operator1', 'Operator2']
+    operators: ['Emeka Tech', 'Damber']
   },
   {
     region: 'Kano West',
     val: 'KanoWest',
     csps: ['Ajingi', 'Albasu', 'Bagwai', 'Bebeji'],
-    operators: ['Operator3', 'Operator4']
+    operators: ['Tolu', 'Emma']
   },
   {
     region: 'Kano Central',
     val: 'KanoCentral',
     csps: ['Bichi', 'Bunkure', 'Dala'],
-    operators: ['Operator5', 'Operator6']
+    operators: ['John', 'David']
   },
   {
     region: 'Kano East',
     val: 'KanoEast',
     csps: ['Dambatta', 'Dawakin Kudu', 'Dawakin Tofa'],
-    operators: ['Operator7', 'Operator8']
+    operators: ['Daniel', 'Karimat']
   },
   {
     region: 'Kano North',
     val: 'KanoNorth',
     csps: ['Doguwa', 'Fagge', 'Gabasawa'],
-    operators: ['Operator9', 'Operator10']
+    operators: ['Kabirat', 'Haliya']
   },
   {
     region: 'Kano South',
     val: 'KanoSouth',
     csps: ['Garko', 'Garum Mallam', 'Gaya'],
-    operators: ['Operator11', 'Operator12']
+    operators: ['Ade', 'Modella']
   },
   {
     region: 'Jigawa South',
     val: 'JigawaSouth',
     csps: ['Gezawa', 'Gwale', 'Gwarzo'],
-    operators: ['Operator13', 'Operator14']
+    operators: ['Kelvin', 'Kelvin Brother']
   },
   {
     region: 'Jigawa North',
     val: 'JigawaNorth',
     csps: ['Kabo', 'Kano Municipal', 'Karaye'],
-    operators: ['Operator15', 'Operator16']
+    operators: ['David', 'Jesus']
   },
   {
     region: 'Katsina Central',
     val: 'KatsinaCentral',
     csps: ['Kibiya', 'Kiru', 'Kumbotso'],
-    operators: ['Operator17', 'Operator18']
+    operators: ['Moses', 'Joshua']
   },
   {
     region: 'Katsina North',
     val: 'KatsinaNorth',
     csps: ['Kunchi', 'Kura', 'Madobi'],
-    operators: ['Operator19', 'Operator20']
+    operators: ['Job', 'Jonah']
   },
   {
     region: 'Katsina South',
     val: 'KatsinaSouth',
     csps: ['Makoda', 'Minjibir', 'Nasarawa'],
-    operators: ['Operator21', 'Operator22']
+    operators: ['Peter', 'Paul']
   }
 ];
 

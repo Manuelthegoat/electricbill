@@ -12,6 +12,9 @@ const KanoNorth = ({
   handleCspChange,
   selectedCsp,
   operators,
+  handleOperatorChange,
+  selectedOperator,
+  operate,
 }) => {
   const number = 2003883; // Replace with your number
   const formattedNumber = number.toLocaleString();
@@ -20,27 +23,33 @@ const KanoNorth = ({
       <div className="content-page">
         <div className="container-fluid">
           <RegionsComponents
-            handleSelectChange={handleSelectChange}
-            selectedItem={selectedItem}
-            setSelectedItem={setSelectedItem}
-            regions={regions}
-            selectedCsps={selectedCsps}
-            operators={operators}
+             handleSelectChange={handleSelectChange}
+             selectedItem={selectedItem}
+             setSelectedItem={setSelectedItem}
+             regions={regions}
+             selectedCsp={selectedCsp}
+             handleCspChange={handleCspChange}
+             selectedCsps={selectedCsps}
+             operators={operators}
+             selectedOperator={selectedOperator}
+             handleOperatorChange={handleOperatorChange}
           />
           <div className="row">
-            <div class="col-lg-3">
-              <div class="card card-transparent card-block card-stretch card-height bToken-none">
-                <div class="card-body p-0 mt-lg-2 mt-0">
-                  <h3 class="mb-3">NEDU R.</h3>
-                  <p class="mb-0 mr-4">
-                    techmint@techmint.com
-                    <br />
-                    08012345678
-                  </p>
-                  <h4 class="mt-3">Supervisor #188354</h4>
+            {selectedOperator && (
+              <div class="col-lg-3">
+                <div class="card card-transparent card-block card-stretch card-height bToken-none">
+                  <div class="card-body p-0 mt-lg-2 mt-0">
+                    <h3 class="mb-3">{operate}</h3>
+                    <p class="mb-0 mr-4">
+                      techmint@techmint.com
+                      <br />
+                      08012345678
+                    </p>
+                    <h4 class="mt-3">Supervisor #188354</h4>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
             <div class="col-lg-3 col-md-3">
               <div class="card card-block card-stretch card-height">
                 <div class="card-body">

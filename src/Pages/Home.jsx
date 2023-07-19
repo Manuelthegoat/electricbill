@@ -22,6 +22,8 @@ const Home = ({
   selectedCsp,
   handleCspChange,
   operators,
+  handleOperatorChange,
+  selectedOperator,
 }) => {
   const number = 2003883; // Replace with your number
   const formattedNumber = number.toLocaleString();
@@ -50,6 +52,8 @@ const Home = ({
               handleCspChange={handleCspChange}
               selectedCsp={selectedCsp}
               operators={operators}
+              selectedOperator={selectedOperator}
+              handleOperatorChange={handleOperatorChange}
             />
             <div className="row">
               {/* <LoggedIn />
@@ -84,7 +88,9 @@ const Home = ({
           selectedCsp={selectedCsp}
           handleCspChange={handleCspChange}
           operators={operators}
-         
+          selectedOperator={selectedOperator}
+          handleOperatorChange={handleOperatorChange}
+          operate={selectedOperator}
         />
       )}
       {selectedItem === "KanoCentral" && (
@@ -98,6 +104,9 @@ const Home = ({
           selectedCsp={selectedCsp}
           handleCspChange={handleCspChange}
           operators={operators}
+          selectedOperator={selectedOperator}
+          handleOperatorChange={handleOperatorChange}
+          operate={selectedOperator}
         />
       )}
       {selectedItem === "KanoEast" && (
@@ -111,6 +120,9 @@ const Home = ({
           selectedCsp={selectedCsp}
           handleCspChange={handleCspChange}
           operators={operators}
+          selectedOperator={selectedOperator}
+          handleOperatorChange={handleOperatorChange}
+          operate={selectedOperator}
         />
       )}
       {selectedItem === "KanoNorth" && (
@@ -124,6 +136,9 @@ const Home = ({
           selectedCsp={selectedCsp}
           handleCspChange={handleCspChange}
           operators={operators}
+          selectedOperator={selectedOperator}
+          handleOperatorChange={handleOperatorChange}
+          operate={selectedOperator}
         />
       )}
       {selectedItem === "KanoSouth" && (

@@ -30,6 +30,8 @@ const Routing = ({
   selectedCsps,
   selectedCspValue,
   operators,
+  handleOperatorChange,
+  selectedOperator,
 }) => {
   return (
     <>
@@ -48,6 +50,8 @@ const Routing = ({
               setSelectedItem={setSelectedItem}
               handleSelectChange={handleSelectChange}
               selectedCsps={selectedCsps}
+              selectedOperator={selectedOperator}
+              handleOperatorChange={handleOperatorChange}
             />
           }
         />

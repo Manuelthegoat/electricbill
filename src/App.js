@@ -12,9 +12,11 @@ function App() {
   const [selectedItem, setSelectedItem] = useState("HQ");
   const [selectedCsp, setSelectedCsp] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [loading, setloading] = useState(false);
   const [regions, setRegions] = useState([]);
   const [selectedCsps, setSelectedCsps] = useState([]);
   const [operators, setOperators] = useState([]);
+  const [selectedOperator, setSelectedOperator] = useState("");
 
   useEffect(() => {
     const extractedRegions = dummyData?.map((data) => ({
@@ -25,7 +27,7 @@ function App() {
   }, []);
   useEffect(() => {
     const selectedRegionData = dummyData?.find(
-      ({ val }) => val === selectedItem 
+      ({ val }) => val === selectedItem
     );
     if (selectedRegionData) {
       const allOperators = selectedRegionData?.operators;
@@ -43,22 +45,42 @@ function App() {
     if (selectedRegionData) {
       setSelectedCsps(selectedRegionData?.csps);
       setSelectedCsp("");
+      setSelectedOperator("");
+      setloading(true);
+
+      setTimeout(() => {
+        setloading(false); 
+      }, 1500);
     } else {
       setSelectedCsps([]);
       setSelectedCsp("");
+      setSelectedOperator("");
     }
   };
   const handleCspChange = (event) => {
     const selectedCspValue = event.target.value;
     setSelectedCsp(selectedCspValue);
+    setloading(true);
+
+    setTimeout(() => {
+      setloading(false); 
+    }, 1500);
   };
-  console.log(selectedCsp);
+  const handleOperatorChange = (event) => {
+    setSelectedOperator(event.target.value);
+    setloading(true);
+
+    setTimeout(() => {
+      setloading(false); 
+    }, 1500);
+  };
   return (
     <div>
-      {/* <div id="loading">
-        <div id="loading-center">
+      {loading && (
+        <div id="loading">
+          <div id="loading-center"></div>
         </div>
-      </div> */}
+      )}
       <div class="wrapper">
         <Sidebar />
         <Header
@@ -77,6 +99,8 @@ function App() {
         handleSelectChange={handleSelectChange}
         regions={regions}
         selectedCsps={selectedCsps}
+        selectedOperator={selectedOperator}
+        handleOperatorChange={handleOperatorChange}
       />
       <Footer />
     </div>
