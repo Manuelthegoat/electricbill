@@ -59,7 +59,7 @@ const Agents = () => {
                       </td>
                       <td>#Agent&nbsp;188354</td>
                       <td>Manuel&nbsp;U.</td>
-                      <td>08198765432</td>
+                      <td>08012345678</td>
                       <td>no&nbsp;7&nbsp;jesus&nbsp;street</td>
                       <td>manuelcreation247@gmail.com</td>
                       <td>
@@ -71,7 +71,7 @@ const Agents = () => {
                       </td>
                       <td>Nil</td>
                       <td>Mr Emmanuel</td>
-                      <td>08198765432</td>
+                      <td>08012345678</td>
                       <td>no 7 jesus street</td>
                       <td>Developer</td>
                       <td>

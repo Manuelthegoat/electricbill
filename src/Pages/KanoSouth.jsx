@@ -35,7 +35,7 @@ const KanoSouth = ({
                   <p class="mb-0 mr-4">
                     manuelcreation247@gmail.com
                     <br />
-                    08198765432
+                    08012345678
                   </p>
                   <h4 class="mt-3">Supervisor #188354</h4>
                 </div>
@@ -172,7 +172,7 @@ const KanoSouth = ({
                         </div>
                       </td>
                       <td>Manuel U.</td>
-                      <td>08198765432</td>
+                      <td>08012345678</td>
                       <td>no 7 jesus street</td>
                       <td>Nigeria</td>
                       <td>1 room</td>

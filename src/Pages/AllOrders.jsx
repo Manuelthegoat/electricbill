@@ -82,7 +82,7 @@ const AllOrders = () => {
                         </div>
                       </td>
                       <td>Manuel U.</td>
-                      <td>08198765432</td>
+                      <td>08012345678</td>
                       <td>no 7 jesus street</td>
                       <td>Nigeria</td>
                       <td>1 room</td>
