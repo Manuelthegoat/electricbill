@@ -308,7 +308,7 @@ const Sidebar = () => {
                   <li class="">
                     <a href="/add-kedco-staff">
                       <i class="fa-solid fa-minus"></i>{" "}
-                      <span>Add Kedco Staff</span>
+                      <span>Create Kedco Staff</span>
                     </a>
                   </li>
                   <li class="">

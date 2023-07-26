@@ -143,7 +143,7 @@ const AddKedcoStaff = () => {
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                         <div class="form-group">
                           <label>User Type *</label>
                           <select
@@ -160,18 +160,18 @@ const AddKedcoStaff = () => {
                           </select>
                         </div>
                       </div>
-                      {/* <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label>Payment Limit *</label>
+                          <label>Funding Limit *</label>
                           <input
                             type="number"
                             class="form-control"
-                            placeholder="Enter Payment Limit"
+                            placeholder="Enter Funding Limit"
                             required
                           />
                           <div class="help-block with-errors"></div>
                         </div>
-                      </div> */}
+                      </div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label>Password *</label>
