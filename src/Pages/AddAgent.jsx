@@ -93,7 +93,7 @@ const AddAgent = () => {
                           />
                         </div>
                       </div>
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label>Region *</label>
                           <select
@@ -113,6 +113,18 @@ const AddAgent = () => {
                   <option value="KanoSouth">Katsina South</option>
 
                           </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Funding Limit *</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter Funding Limit"
+                            required
+                          />
+                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                       <div class="col-md-12">

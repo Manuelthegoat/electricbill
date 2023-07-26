@@ -38,6 +38,7 @@ const Agents = () => {
                       <th>Email</th>
                       <th>Picture</th>
                       <th>Region</th>
+                      <th>Funding Limit</th>
                       <th>Guarantor Name</th>
                       <th>Guarantor NO</th>
                       <th>Guarantor Address</th>
@@ -70,6 +71,7 @@ const Agents = () => {
                         />
                       </td>
                       <td>Nil</td>
+                      <td>10,000</td>
                       <td>Mr Emmanuel</td>
                       <td>08012345678</td>
                       <td>no 7 jesus street</td>
