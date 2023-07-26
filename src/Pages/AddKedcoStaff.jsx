@@ -143,7 +143,7 @@ const AddKedcoStaff = () => {
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label>User Type *</label>
                           <select
@@ -158,6 +158,20 @@ const AddKedcoStaff = () => {
                             <option>Cashier</option>
                             <option>Senior Cashier</option>
                           </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Operator / User Name*</label>
+                          <select
+                            name="type"
+                            class=" form-control"
+                            data-style="py-0"
+                          >
+                            <option>Davido</option>
+                            <option>Mercy Chinwo</option>
+                          </select>
+                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                       <div class="col-md-6">

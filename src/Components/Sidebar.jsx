@@ -308,7 +308,7 @@ const Sidebar = () => {
                   <li class="">
                     <a href="/add-kedco-staff">
                       <i class="fa-solid fa-minus"></i>{" "}
-                      <span>Create Kedco Staff</span>
+                      <span>Create User</span>
                     </a>
                   </li>
                   <li class="">
@@ -319,7 +319,7 @@ const Sidebar = () => {
                   <li class="">
                     <a href="/create-agent">
                       <i class="fa-solid fa-minus"></i>
-                      <span>Create User</span>
+                      <span>Create Skoten Agent</span>
                     </a>
                   </li>
                 </ul>
