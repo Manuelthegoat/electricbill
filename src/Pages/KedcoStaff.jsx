@@ -40,10 +40,10 @@ const KedcoStaff = () => {
                       <th>Email</th>
                       <th>Mobile</th>
                       <th>Region</th>
-                      <th>Funding Limit</th>
+
                       <th>CSP</th>
                       <th>User Type</th>
-                      <th>Limit</th>
+                      <th>Funding Limit</th>
                     </tr>
                   </thead>
                   <tbody class="ligth-body">
@@ -63,7 +63,6 @@ const KedcoStaff = () => {
                       <td>Micheal.d@example.com</td>
                       <td>+2349947664588</td>
                       <td>Kano&nbsp;Central</td>
-                      <td>10,000</td>
                       <td>Emmanuel</td>
                       <td>Sales</td>
                       <td>500,000</td>
