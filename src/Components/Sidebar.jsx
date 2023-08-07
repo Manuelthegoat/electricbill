@@ -41,7 +41,7 @@ const Sidebar = () => {
                   </svg>
                   <span class="ml-4">Dashboard</span>
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="/create-customer" class="svg-icon">
                   <svg
@@ -63,7 +63,7 @@ const Sidebar = () => {
                   </svg>
                   <span class="ml-4">Create Customer</span>
                 </a>
-              </li> */}
+              </li>
 
               <li class=" ">
                 <a
