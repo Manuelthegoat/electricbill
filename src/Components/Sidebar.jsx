@@ -20,7 +20,7 @@ const Sidebar = () => {
         <div class="data-scrollbar" data-scroll="1">
           <nav class="iq-sidebar-menu">
             <ul id="iq-sidebar-toggle" class="iq-menu">
-              <li class="active">
+              {/* <li class="active">
                 <a href="/" class="svg-icon">
                   <svg
                     class="svg-icon"
@@ -63,7 +63,7 @@ const Sidebar = () => {
                   </svg>
                   <span class="ml-4">Create Customer</span>
                 </a>
-              </li>
+              </li> */}
 
               <li class=" ">
                 <a
